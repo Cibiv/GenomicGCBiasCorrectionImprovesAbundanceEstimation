@@ -1,0 +1,12 @@
+name: GuaCAMOLEEvaluate
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - scikit-learn
