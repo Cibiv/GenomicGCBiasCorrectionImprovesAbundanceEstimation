@@ -1,0 +1,33 @@
+#mpa_vJun23_CHOCOPhlAnSGB_202403
+#/home/CIBIV/laurenz/.local/share/mamba/envs/metaphlan_env/bin/metaphlan param_uniform_5_rep_2_R1.fastq.gz,param_uniform_5_rep_2_R2.fastq.gz --bowtie2out param_uniform_5_rep_2.bowtie2.bz --bowtie2db /project/laurenz_mbarc/btdb -o ../../results1006/param_uniform_5_rep_2.mpa --input_type fastq --nproc 40 --pres_th 1
+#28770758 reads processed
+#SampleID	Metaphlan_Analysis
+#clade_name	NCBI_tax_id	relative_abundance	additional_species
+k__Bacteria	2	100.0	
+k__Bacteria|p__Proteobacteria	2|1224	46.95136	
+k__Bacteria|p__Spirochaetes	2|203691	27.26707	
+k__Bacteria|p__Actinobacteria	2|201174	25.78157	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria	2|1224|1236	35.19845	
+k__Bacteria|p__Spirochaetes|c__Spirochaetia	2|203691|203692	27.26707	
+k__Bacteria|p__Actinobacteria|c__Actinomycetia	2|201174|1760	25.78157	
+k__Bacteria|p__Proteobacteria|c__Betaproteobacteria	2|1224|28216	11.7529	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Enterobacterales	2|1224|1236|91347	35.19845	
+k__Bacteria|p__Spirochaetes|c__Spirochaetia|o__Spirochaetales	2|203691|203692|136	27.26707	
+k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Corynebacteriales	2|201174|1760|85007	25.78157	
+k__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Rhodocyclales	2|1224|28216|206389	11.7529	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Enterobacterales|f__Enterobacteriaceae	2|1224|1236|91347|543	35.19845	
+k__Bacteria|p__Spirochaetes|c__Spirochaetia|o__Spirochaetales|f__Borreliaceae	2|203691|203692|136|1643685	27.26707	
+k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Corynebacteriales|f__Mycobacteriaceae	2|201174|1760|85007|1762	25.78157	
+k__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Rhodocyclales|f__Zoogloeaceae	2|1224|28216|206389|2008794	11.7529	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Enterobacterales|f__Enterobacteriaceae|g__Candidatus_Blochmannia	2|1224|1236|91347|543|203804	35.19845	
+k__Bacteria|p__Spirochaetes|c__Spirochaetia|o__Spirochaetales|f__Borreliaceae|g__Borrelia	2|203691|203692|136|1643685|138	27.26707	
+k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Corynebacteriales|f__Mycobacteriaceae|g__Mycolicibacterium	2|201174|1760|85007|1762|1866885	25.78157	
+k__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Rhodocyclales|f__Zoogloeaceae|g__Azoarcus	2|1224|28216|206389|2008794|12960	11.7529	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Enterobacterales|f__Enterobacteriaceae|g__Candidatus_Blochmannia|s__Candidatus_Blochmannia_vafer	2|1224|1236|91347|543|203804|251535	35.19845	
+k__Bacteria|p__Spirochaetes|c__Spirochaetia|o__Spirochaetales|f__Borreliaceae|g__Borrelia|s__Borrelia_turicatae	2|203691|203692|136|1643685|138|142	27.26707	
+k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Corynebacteriales|f__Mycobacteriaceae|g__Mycolicibacterium|s__Mycolicibacterium_sp_YH_1	2|201174|1760|85007|1762|1866885|2908837	25.78157	
+k__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Rhodocyclales|f__Zoogloeaceae|g__Azoarcus|s__Azoarcus_communis	2|1224|28216|206389|2008794|12960|41977	11.7529	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Enterobacterales|f__Enterobacteriaceae|g__Candidatus_Blochmannia|s__Candidatus_Blochmannia_vafer|t__SGB5381	2|1224|1236|91347|543|203804|251535|	35.19845	
+k__Bacteria|p__Spirochaetes|c__Spirochaetia|o__Spirochaetales|f__Borreliaceae|g__Borrelia|s__Borrelia_turicatae|t__SGB19122	2|203691|203692|136|1643685|138|142|	27.26707	k__Bacteria|p__Spirochaetes|c__Spirochaetia|o__Spirochaetales|f__Borreliaceae|g__Borrelia|s__Borrelia_parkeri,k__Bacteria|p__Spirochaetes|c__Spirochaetia|o__Spirochaetales|f__Borreliaceae|g__Borrelia|s__Borrelia_puertoricensis,k__Bacteria|p__Spirochaetes|c__Spirochaetia|o__Spirochaetales|f__Borreliaceae|g__Borrelia|s__Borrelia_venezuelensis
+k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Corynebacteriales|f__Mycobacteriaceae|g__Mycolicibacterium|s__Mycolicibacterium_sp_YH_1|t__SGB110815	2|201174|1760|85007|1762|1866885|2908837|	25.78157	
+k__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Rhodocyclales|f__Zoogloeaceae|g__Azoarcus|s__Azoarcus_communis|t__SGB22625	2|1224|28216|206389|2008794|12960|41977|	11.7529	

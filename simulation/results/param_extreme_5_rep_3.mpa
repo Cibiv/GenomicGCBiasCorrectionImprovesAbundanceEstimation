@@ -1,0 +1,39 @@
+#mpa_vJun23_CHOCOPhlAnSGB_202403
+#/home/CIBIV/laurenz/.local/share/mamba/envs/metaphlan_env/bin/metaphlan param_extreme_5_rep_3_R1.fastq.gz,param_extreme_5_rep_3_R2.fastq.gz --bowtie2out param_extreme_5_rep_3.bowtie2.bz --bowtie2db /project/laurenz_mbarc/btdb -o ../../results1006/param_extreme_5_rep_3.mpa --input_type fastq --nproc 40 --pres_th 1
+#21911168 reads processed
+#SampleID	Metaphlan_Analysis
+#clade_name	NCBI_tax_id	relative_abundance	additional_species
+k__Bacteria	2	100.0	
+k__Bacteria|p__Tenericutes	2|544448	68.09195	
+k__Bacteria|p__Actinobacteria	2|201174	16.75841	
+k__Bacteria|p__Proteobacteria	2|1224	11.50685	
+k__Bacteria|p__Firmicutes	2|1239	3.64278	
+k__Bacteria|p__Tenericutes|c__Tenericutes_unclassified	2|544448|	68.09195	
+k__Bacteria|p__Actinobacteria|c__Actinomycetia	2|201174|1760	16.75841	
+k__Bacteria|p__Proteobacteria|c__Epsilonproteobacteria	2|1224|29547	11.50685	
+k__Bacteria|p__Firmicutes|c__Bacilli	2|1239|91061	3.64278	
+k__Bacteria|p__Tenericutes|c__Tenericutes_unclassified|o__Mycoplasmoidales	2|544448||2790996	68.09195	
+k__Bacteria|p__Proteobacteria|c__Epsilonproteobacteria|o__Nautiliales	2|1224|29547|235899	11.50685	
+k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Corynebacteriales	2|201174|1760|85007	9.33353	
+k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Streptomycetales	2|201174|1760|85011	7.42489	
+k__Bacteria|p__Firmicutes|c__Bacilli|o__Lactobacillales	2|1239|91061|186826	3.64278	
+k__Bacteria|p__Tenericutes|c__Tenericutes_unclassified|o__Mycoplasmoidales|f__Mycoplasmoidaceae	2|544448||2790996|2790998	68.09195	
+k__Bacteria|p__Proteobacteria|c__Epsilonproteobacteria|o__Nautiliales|f__Nitratiruptoraceae	2|1224|29547|235899|2795691	11.50685	
+k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Corynebacteriales|f__Corynebacteriaceae	2|201174|1760|85007|1653	9.33353	
+k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Streptomycetales|f__Streptomycetaceae	2|201174|1760|85011|2062	7.42489	
+k__Bacteria|p__Firmicutes|c__Bacilli|o__Lactobacillales|f__Enterococcaceae	2|1239|91061|186826|81852	3.64278	
+k__Bacteria|p__Tenericutes|c__Tenericutes_unclassified|o__Mycoplasmoidales|f__Mycoplasmoidaceae|g__Malacoplasma	2|544448||2790996|2790998|2791001	68.09195	
+k__Bacteria|p__Proteobacteria|c__Epsilonproteobacteria|o__Nautiliales|f__Nitratiruptoraceae|g__Nitratiruptor	2|1224|29547|235899|2795691|269258	11.50685	
+k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Corynebacteriales|f__Corynebacteriaceae|g__Corynebacterium	2|201174|1760|85007|1653|1716	9.33353	
+k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Streptomycetales|f__Streptomycetaceae|g__Streptomyces	2|201174|1760|85011|2062|1883	7.42489	
+k__Bacteria|p__Firmicutes|c__Bacilli|o__Lactobacillales|f__Enterococcaceae|g__Melissococcus	2|1239|91061|186826|81852|33969	3.64278	
+k__Bacteria|p__Tenericutes|c__Tenericutes_unclassified|o__Mycoplasmoidales|f__Mycoplasmoidaceae|g__Malacoplasma|s__Malacoplasma_penetrans	2|544448||2790996|2790998|2791001|28227	68.09195	
+k__Bacteria|p__Proteobacteria|c__Epsilonproteobacteria|o__Nautiliales|f__Nitratiruptoraceae|g__Nitratiruptor|s__Nitratiruptor_sp_YY09_18	2|1224|29547|235899|2795691|269258|2724901	11.50685	
+k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Corynebacteriales|f__Corynebacteriaceae|g__Corynebacterium|s__Corynebacterium_doosanense	2|201174|1760|85007|1653|1716|1121358	9.33353	
+k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Streptomycetales|f__Streptomycetaceae|g__Streptomyces|s__Streptomyces_anthocyanicus	2|201174|1760|85011|2062|1883|68174	7.42489	
+k__Bacteria|p__Firmicutes|c__Bacilli|o__Lactobacillales|f__Enterococcaceae|g__Melissococcus|s__Melissococcus_plutonius	2|1239|91061|186826|81852|33969|33970	3.64278	
+k__Bacteria|p__Tenericutes|c__Tenericutes_unclassified|o__Mycoplasmoidales|f__Mycoplasmoidaceae|g__Malacoplasma|s__Malacoplasma_penetrans|t__SGB5565	2|544448||2790996|2790998|2791001|28227|	68.09195	
+k__Bacteria|p__Proteobacteria|c__Epsilonproteobacteria|o__Nautiliales|f__Nitratiruptoraceae|g__Nitratiruptor|s__Nitratiruptor_sp_YY09_18|t__SGB91235	2|1224|29547|235899|2795691|269258|2724901|	11.50685	
+k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Corynebacteriales|f__Corynebacteriaceae|g__Corynebacterium|s__Corynebacterium_doosanense|t__SGB17090	2|201174|1760|85007|1653|1716|1121358|	9.33353	
+k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Streptomycetales|f__Streptomycetaceae|g__Streptomyces|s__Streptomyces_anthocyanicus|t__SGB16238	2|201174|1760|85011|2062|1883|68174|	7.42489	k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Streptomycetales|f__Streptomycetaceae|g__Streptomyces|s__Streptomyces_coelicolor,k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Streptomycetales|f__Streptomycetaceae|g__Streptomyces|s__Streptomyces_rubrogriseus,k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Streptomycetales|f__Streptomycetaceae|g__Streptomyces|s__Streptomyces_lividans,k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Streptomycetales|f__Streptomycetaceae|g__Streptomyces|s__Streptomyces_sp_2114_2,k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Streptomycetales|f__Streptomycetaceae|g__Streptomyces|s__Streptomyces_sp_RK76,k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Streptomycetales|f__Streptomycetaceae|g__Streptomyces|s__Streptomyces_sp_CB09001,k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Streptomycetales|f__Streptomycetaceae|g__Streptomyces|s__Streptomyces_sp_LRa12,k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Streptomycetales|f__Streptomycetaceae|g__Streptomyces|s__Streptomyces_violaceoruber,k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Streptomycetales|f__Streptomycetaceae|g__Streptomyces|s__Streptomyces_sp_E5N91,k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Streptomycetales|f__Streptomycetaceae|g__Streptomyces|s__Streptomyces_sp_WM6391,k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Streptomycetales|f__Streptomycetaceae|g__Streptomyces|s__Streptomyces_sp_111WW2
+k__Bacteria|p__Firmicutes|c__Bacilli|o__Lactobacillales|f__Enterococcaceae|g__Melissococcus|s__Melissococcus_plutonius|t__SGB7955	2|1239|91061|186826|81852|33969|33970|	3.64278	

@@ -1,0 +1,39 @@
+#mpa_vJun23_CHOCOPhlAnSGB_202403
+#/home/CIBIV/laurenz/.local/share/mamba/envs/metaphlan_env/bin/metaphlan param_extreme_5_rep_2_R1.fastq.gz,param_extreme_5_rep_2_R2.fastq.gz --bowtie2out param_extreme_5_rep_2.bowtie2.bz --bowtie2db /project/laurenz_mbarc/btdb -o ../../results1006/param_extreme_5_rep_2.mpa --input_type fastq --nproc 40 --pres_th 1
+#34726366 reads processed
+#SampleID	Metaphlan_Analysis
+#clade_name	NCBI_tax_id	relative_abundance	additional_species
+k__Bacteria	2	100.0	
+k__Bacteria|p__Spirochaetes	2|203691	74.02739	
+k__Bacteria|p__Proteobacteria	2|1224	14.32479	
+k__Bacteria|p__Bacteroidota	2|976	11.64781	
+k__Bacteria|p__Spirochaetes|c__Spirochaetia	2|203691|203692	74.02739	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria	2|1224|1236	14.29203	
+k__Bacteria|p__Bacteroidota|c__Flavobacteriia	2|976|117743	11.64781	
+k__Bacteria|p__Proteobacteria|c__Alphaproteobacteria	2|1224|28211	0.03276	
+k__Bacteria|p__Spirochaetes|c__Spirochaetia|o__Spirochaetales	2|203691|203692|136	74.02739	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Xanthomonadales	2|1224|1236|135614	14.29203	
+k__Bacteria|p__Bacteroidota|c__Flavobacteriia|o__Flavobacteriales	2|976|117743|200644	11.64781	
+k__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Sphingomonadales	2|1224|28211|204457	0.03276	
+k__Bacteria|p__Spirochaetes|c__Spirochaetia|o__Spirochaetales|f__Treponemataceae	2|203691|203692|136|2845253	74.02739	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Xanthomonadales|f__Rhodanobacteraceae	2|1224|1236|135614|1775411	14.29203	
+k__Bacteria|p__Bacteroidota|c__Flavobacteriia|o__Flavobacteriales|f__Blattabacteriaceae	2|976|117743|200644|39782	6.59557	
+k__Bacteria|p__Bacteroidota|c__Flavobacteriia|o__Flavobacteriales|f__Flavobacteriaceae	2|976|117743|200644|49546	5.05225	
+k__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Sphingomonadales|f__Sphingosinicellaceae	2|1224|28211|204457|2820280	0.03276	
+k__Bacteria|p__Spirochaetes|c__Spirochaetia|o__Spirochaetales|f__Treponemataceae|g__Treponema	2|203691|203692|136|2845253|157	74.02739	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Xanthomonadales|f__Rhodanobacteraceae|g__Luteibacter	2|1224|1236|135614|1775411|242605	14.29203	
+k__Bacteria|p__Bacteroidota|c__Flavobacteriia|o__Flavobacteriales|f__Blattabacteriaceae|g__Blattabacterium	2|976|117743|200644|39782|34098	6.59557	
+k__Bacteria|p__Bacteroidota|c__Flavobacteriia|o__Flavobacteriales|f__Flavobacteriaceae|g__Flavobacterium	2|976|117743|200644|49546|237	5.05225	
+k__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Sphingomonadales|f__Sphingosinicellaceae|g__Sphingosinicella	2|1224|28211|204457|2820280|335405	0.03276	
+k__Bacteria|p__Spirochaetes|c__Spirochaetia|o__Spirochaetales|f__Treponemataceae|g__Treponema|s__Treponema_sp_OMZ_787	2|203691|203692|136|2845253|157|2563669	74.02739	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Xanthomonadales|f__Rhodanobacteraceae|g__Luteibacter|s__Luteibacter_sp_335	2|1224|1236|135614|1775411|242605|2911538	14.29203	
+k__Bacteria|p__Bacteroidota|c__Flavobacteriia|o__Flavobacteriales|f__Blattabacteriaceae|g__Blattabacterium|s__Blattabacterium_cuenoti	2|976|117743|200644|39782|34098|1653831	6.59557	
+k__Bacteria|p__Bacteroidota|c__Flavobacteriia|o__Flavobacteriales|f__Flavobacteriaceae|g__Flavobacterium|s__Flavobacterium_johnsoniae	2|976|117743|200644|49546|237|986	5.05225	
+k__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Sphingomonadales|f__Sphingosinicellaceae|g__Sphingosinicella|s__Sphingosinicella_microcystinivorans	2|1224|28211|204457|2820280|335405|335406	0.02529	
+k__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Sphingomonadales|f__Sphingosinicellaceae|g__Sphingosinicella|s__Sphingosinicella_soli	2|1224|28211|204457|2820280|335405|333708	0.00748	
+k__Bacteria|p__Spirochaetes|c__Spirochaetia|o__Spirochaetales|f__Treponemataceae|g__Treponema|s__Treponema_sp_OMZ_787|t__SGB109536	2|203691|203692|136|2845253|157|2563669|	74.02739	k__Bacteria|p__Spirochaetes|c__Spirochaetia|o__Spirochaetales|f__Treponemataceae|g__Treponema|s__Treponema_sp_OMZ_788
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Xanthomonadales|f__Rhodanobacteraceae|g__Luteibacter|s__Luteibacter_sp_335|t__SGB110210	2|1224|1236|135614|1775411|242605|2911538|	14.29203	
+k__Bacteria|p__Bacteroidota|c__Flavobacteriia|o__Flavobacteriales|f__Blattabacteriaceae|g__Blattabacterium|s__Blattabacterium_cuenoti|t__SGB5409_group	2|976|117743|200644|39782|34098|1653831|	6.59557	k__Bacteria|p__Bacteroidota|c__Flavobacteriia|o__Flavobacteriales|f__Blattabacteriaceae|g__Blattabacterium|s__Blattabacterium_sp_Periplaneta_americana,k__Bacteria|p__Bacteroidota|c__Flavobacteriia|o__Flavobacteriales|f__Blattabacteriaceae|g__Blattabacterium|s__Blattabacterium_sp_Blatta_orientalis
+k__Bacteria|p__Bacteroidota|c__Flavobacteriia|o__Flavobacteriales|f__Flavobacteriaceae|g__Flavobacterium|s__Flavobacterium_johnsoniae|t__SGB2990	2|976|117743|200644|49546|237|986|	5.05225	
+k__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Sphingomonadales|f__Sphingosinicellaceae|g__Sphingosinicella|s__Sphingosinicella_microcystinivorans|t__SGB31582	2|1224|28211|204457|2820280|335405|335406|	0.02529	
+k__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Sphingomonadales|f__Sphingosinicellaceae|g__Sphingosinicella|s__Sphingosinicella_soli|t__SGB90219	2|1224|28211|204457|2820280|335405|333708|	0.00748	

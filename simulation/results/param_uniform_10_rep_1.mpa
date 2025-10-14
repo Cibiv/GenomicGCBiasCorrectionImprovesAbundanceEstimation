@@ -1,0 +1,61 @@
+#mpa_vJun23_CHOCOPhlAnSGB_202403
+#/home/CIBIV/laurenz/.local/share/mamba/envs/metaphlan_env/bin/metaphlan param_uniform_10_rep_1_R1.fastq.gz,param_uniform_10_rep_1_R2.fastq.gz --bowtie2out param_uniform_10_rep_1.bowtie2.bz --bowtie2db /project/laurenz_mbarc/btdb -o ../../results1006/param_uniform_10_rep_1.mpa --input_type fastq --nproc 40 --pres_th 1
+#32602118 reads processed
+#SampleID	Metaphlan_Analysis
+#clade_name	NCBI_tax_id	relative_abundance	additional_species
+k__Bacteria	2	100.0	
+k__Bacteria|p__Bacteroidota	2|976	72.13665	
+k__Bacteria|p__Proteobacteria	2|1224	24.90109	
+k__Bacteria|p__Deinococcus_Thermus	2|1297	2.16883	
+k__Bacteria|p__Firmicutes	2|1239	0.79344	
+k__Bacteria|p__Bacteroidota|c__Bacteroidia	2|976|200643	72.13665	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria	2|1224|1236	11.88091	
+k__Bacteria|p__Proteobacteria|c__Betaproteobacteria	2|1224|28216	11.06052	
+k__Bacteria|p__Deinococcus_Thermus|c__Deinococci	2|1297|188787	2.16883	
+k__Bacteria|p__Proteobacteria|c__Alphaproteobacteria	2|1224|28211	1.95966	
+k__Bacteria|p__Firmicutes|c__Bacilli	2|1239|91061	0.79344	
+k__Bacteria|p__Bacteroidota|c__Bacteroidia|o__Bacteroidales	2|976|200643|171549	72.13665	
+k__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Burkholderiales	2|1224|28216|80840	11.02232	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Enterobacterales	2|1224|1236|91347	9.34675	
+k__Bacteria|p__Deinococcus_Thermus|c__Deinococci|o__Deinococcales	2|1297|188787|118964	2.16883	
+k__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Rhodobacterales	2|1224|28211|204455	1.95966	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Thiotrichales	2|1224|1236|72273	1.85134	
+k__Bacteria|p__Firmicutes|c__Bacilli|o__Bacillales	2|1239|91061|1385	0.79344	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Pseudomonadales	2|1224|1236|72274	0.68282	
+k__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Nitrosomonadales	2|1224|28216|32003	0.03821	
+k__Bacteria|p__Bacteroidota|c__Bacteroidia|o__Bacteroidales|f__Prevotellaceae	2|976|200643|171549|171552	72.13665	
+k__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Burkholderiales|f__Oxalobacteraceae	2|1224|28216|80840|75682	11.02232	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Enterobacterales|f__Erwiniaceae	2|1224|1236|91347|1903409	9.34675	
+k__Bacteria|p__Deinococcus_Thermus|c__Deinococci|o__Deinococcales|f__Deinococcaceae	2|1297|188787|118964|183710	2.16883	
+k__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Rhodobacterales|f__Roseobacteraceae	2|1224|28211|204455|2854170	1.95966	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Thiotrichales|f__Francisellaceae	2|1224|1236|72273|34064	1.85134	
+k__Bacteria|p__Firmicutes|c__Bacilli|o__Bacillales|f__Bacillales_unclassified	2|1239|91061|1385|	0.79344	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Pseudomonadales|f__Pseudomonadaceae	2|1224|1236|72274|135621	0.68282	
+k__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Nitrosomonadales|f__Nitrosomonadaceae	2|1224|28216|32003|206379	0.03821	
+k__Bacteria|p__Bacteroidota|c__Bacteroidia|o__Bacteroidales|f__Prevotellaceae|g__Prevotella	2|976|200643|171549|171552|838	72.13665	
+k__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Burkholderiales|f__Oxalobacteraceae|g__Massilia	2|1224|28216|80840|75682|149698	11.02232	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Enterobacterales|f__Erwiniaceae|g__Buchnera	2|1224|1236|91347|1903409|32199	9.34675	
+k__Bacteria|p__Deinococcus_Thermus|c__Deinococci|o__Deinococcales|f__Deinococcaceae|g__Deinococcus	2|1297|188787|118964|183710|1298	2.16883	
+k__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Rhodobacterales|f__Roseobacteraceae|g__Phaeobacter	2|1224|28211|204455|2854170|302485	1.95966	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Thiotrichales|f__Francisellaceae|g__Francisella	2|1224|1236|72273|34064|262	1.85134	
+k__Bacteria|p__Firmicutes|c__Bacilli|o__Bacillales|f__Bacillales_unclassified|g__Exiguobacterium	2|1239|91061|1385||33986	0.79344	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Pseudomonadales|f__Pseudomonadaceae|g__Pseudomonas	2|1224|1236|72274|135621|286	0.68282	
+k__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Nitrosomonadales|f__Nitrosomonadaceae|g__Nitrosomonas	2|1224|28216|32003|206379|914	0.03821	
+k__Bacteria|p__Bacteroidota|c__Bacteroidia|o__Bacteroidales|f__Prevotellaceae|g__Prevotella|s__Prevotella_bivia	2|976|200643|171549|171552|838|28125	72.13665	
+k__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Burkholderiales|f__Oxalobacteraceae|g__Massilia|s__Massilia_sp_DM_R_R2A_13	2|1224|28216|80840|75682|149698|2899220	11.02232	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Enterobacterales|f__Erwiniaceae|g__Buchnera|s__Buchnera_aphidicola	2|1224|1236|91347|1903409|32199|9	9.34675	
+k__Bacteria|p__Deinococcus_Thermus|c__Deinococci|o__Deinococcales|f__Deinococcaceae|g__Deinococcus|s__Deinococcus_actinosclerus	2|1297|188787|118964|183710|1298|1768108	2.16883	
+k__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Rhodobacterales|f__Roseobacteraceae|g__Phaeobacter|s__Phaeobacter_piscinae	2|1224|28211|204455|2854170|302485|1580596	1.95966	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Thiotrichales|f__Francisellaceae|g__Francisella|s__Francisella_persica	2|1224|1236|72273|34064|262|954	1.85134	
+k__Bacteria|p__Firmicutes|c__Bacilli|o__Bacillales|f__Bacillales_unclassified|g__Exiguobacterium|s__Exiguobacterium_alkaliphilum	2|1239|91061|1385||33986|1428684	0.79344	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Pseudomonadales|f__Pseudomonadaceae|g__Pseudomonas|s__Pseudomonas_citronellolis	2|1224|1236|72274|135621|286|53408	0.68282	
+k__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Nitrosomonadales|f__Nitrosomonadaceae|g__Nitrosomonas|s__Nitrosomonas_sp_Nm51	2|1224|28216|32003|206379|914|133720	0.03821	
+k__Bacteria|p__Bacteroidota|c__Bacteroidia|o__Bacteroidales|f__Prevotellaceae|g__Prevotella|s__Prevotella_bivia|t__SGB1557	2|976|200643|171549|171552|838|28125|	72.13665	
+k__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Burkholderiales|f__Oxalobacteraceae|g__Massilia|s__Massilia_sp_DM_R_R2A_13|t__SGB110323	2|1224|28216|80840|75682|149698|2899220|	11.02232	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Enterobacterales|f__Erwiniaceae|g__Buchnera|s__Buchnera_aphidicola|t__SGB5390	2|1224|1236|91347|1903409|32199|9|	9.34675	
+k__Bacteria|p__Deinococcus_Thermus|c__Deinococci|o__Deinococcales|f__Deinococcaceae|g__Deinococcus|s__Deinococcus_actinosclerus|t__SGB17547	2|1297|188787|118964|183710|1298|1768108|	2.16883	k__Bacteria|p__Deinococcus_Thermus|c__Deinococci|o__Deinococcales|f__Deinococcaceae|g__Deinococcus|s__Deinococcus_kurensis,k__Bacteria|p__Deinococcus_Thermus|c__Deinococci|o__Deinococcales|f__Deinococcaceae|g__Deinococcus|s__Deinococcus_arenae
+k__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Rhodobacterales|f__Roseobacteraceae|g__Phaeobacter|s__Phaeobacter_piscinae|t__SGB10601	2|1224|28211|204455|2854170|302485|1580596|	1.95966	k__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Rhodobacterales|f__Roseobacteraceae|g__Phaeobacter|s__Phaeobacter_sp_S60,k__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Rhodobacterales|f__Roseobacteraceae|g__Phaeobacter|s__Phaeobacter_sp_LSS9
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Thiotrichales|f__Francisellaceae|g__Francisella|s__Francisella_persica|t__SGB27652	2|1224|1236|72273|34064|262|954|	1.85134	
+k__Bacteria|p__Firmicutes|c__Bacilli|o__Bacillales|f__Bacillales_unclassified|g__Exiguobacterium|s__Exiguobacterium_alkaliphilum|t__SGB8324	2|1239|91061|1385||33986|1428684|	0.79344	k__Bacteria|p__Firmicutes|c__Bacilli|o__Bacillales|f__Bacillales_unclassified|g__Exiguobacterium|s__Exiguobacterium_sp_s150,k__Bacteria|p__Firmicutes|c__Bacilli|o__Bacillales|f__Bacillales_unclassified|g__Exiguobacterium|s__Exiguobacterium_sp_AB2
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Pseudomonadales|f__Pseudomonadaceae|g__Pseudomonas|s__Pseudomonas_citronellolis|t__SGB12328	2|1224|1236|72274|135621|286|53408|	0.68282	k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Pseudomonadales|f__Pseudomonadaceae|g__Pseudomonas|s__Pseudomonas_sp_EGD_AKN5,k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Pseudomonadales|f__Pseudomonadaceae|g__Pseudomonas|s__Pseudomonas_sp_HMSC75E02,k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Pseudomonadales|f__Pseudomonadaceae|g__Pseudomonas|s__Pseudomonas_sp_AAC,k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Pseudomonadales|f__Pseudomonadaceae|g__Pseudomonas|s__Pseudomonas_sp_RW407,k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Pseudomonadales|f__Pseudomonadaceae|g__Pseudomonas|s__Pseudomonas_humi,k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Pseudomonadales|f__Pseudomonadaceae|g__Pseudomonas|s__Pseudomonas_delhiensis,k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Pseudomonadales|f__Pseudomonadaceae|g__Pseudomonas|s__Pseudomonas_sp_PI1,k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Pseudomonadales|f__Pseudomonadaceae|g__Pseudomonas|s__Pseudomonas_sp_R3_Fl
+k__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Nitrosomonadales|f__Nitrosomonadaceae|g__Nitrosomonas|s__Nitrosomonas_sp_Nm51|t__SGB13369	2|1224|28216|32003|206379|914|133720|	0.03821	

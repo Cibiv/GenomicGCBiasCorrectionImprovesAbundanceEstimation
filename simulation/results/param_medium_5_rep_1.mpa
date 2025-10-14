@@ -1,0 +1,35 @@
+#mpa_vJun23_CHOCOPhlAnSGB_202403
+#/home/CIBIV/laurenz/.local/share/mamba/envs/metaphlan_env/bin/metaphlan param_medium_5_rep_1_R1.fastq.gz,param_medium_5_rep_1_R2.fastq.gz --bowtie2out param_medium_5_rep_1.bowtie2.bz --bowtie2db /project/laurenz_mbarc/btdb -o ../../results1006/param_medium_5_rep_1.mpa --input_type fastq --nproc 40 --pres_th 1
+#36654720 reads processed
+#SampleID	Metaphlan_Analysis
+#clade_name	NCBI_tax_id	relative_abundance	additional_species
+k__Bacteria	2	100.0	
+k__Bacteria|p__Actinobacteria	2|201174	60.98242	
+k__Bacteria|p__Proteobacteria	2|1224	37.35714	
+k__Bacteria|p__Firmicutes	2|1239	1.66044	
+k__Bacteria|p__Actinobacteria|c__Actinomycetia	2|201174|1760	60.98242	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria	2|1224|1236	21.02345	
+k__Bacteria|p__Proteobacteria|c__Betaproteobacteria	2|1224|28216	16.33369	
+k__Bacteria|p__Firmicutes|c__Bacilli	2|1239|91061	1.66044	
+k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Micrococcales	2|201174|1760|85006	60.98242	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Enterobacterales	2|1224|1236|91347	21.02345	
+k__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Nitrosomonadales	2|1224|28216|32003	16.33369	
+k__Bacteria|p__Firmicutes|c__Bacilli|o__Lactobacillales	2|1239|91061|186826	1.66044	
+k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Micrococcales|f__Micrococcaceae	2|201174|1760|85006|1268	60.98242	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Enterobacterales|f__Yersiniaceae	2|1224|1236|91347|1903411	21.02345	
+k__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Nitrosomonadales|f__Nitrosomonadaceae	2|1224|28216|32003|206379	16.33369	
+k__Bacteria|p__Firmicutes|c__Bacilli|o__Lactobacillales|f__Streptococcaceae	2|1239|91061|186826|1300	1.66044	
+k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Micrococcales|f__Micrococcaceae|g__Auritidibacter	2|201174|1760|85006|1268|1160973	60.98242	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Enterobacterales|f__Yersiniaceae|g__Yersinia	2|1224|1236|91347|1903411|629	21.02345	
+k__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Nitrosomonadales|f__Nitrosomonadaceae|g__Nitrosospira	2|1224|28216|32003|206379|35798	16.33369	
+k__Bacteria|p__Firmicutes|c__Bacilli|o__Lactobacillales|f__Streptococcaceae|g__Streptococcus	2|1239|91061|186826|1300|1301	1.66044	
+k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Micrococcales|f__Micrococcaceae|g__Auritidibacter|s__Auritidibacter_ignavus	2|201174|1760|85006|1268|1160973|678932	60.98242	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Enterobacterales|f__Yersiniaceae|g__Yersinia|s__Yersinia_intermedia	2|1224|1236|91347|1903411|629|631	21.02345	
+k__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Nitrosomonadales|f__Nitrosomonadaceae|g__Nitrosospira|s__Nitrosospira_lacus	2|1224|28216|32003|206379|35798|1288494	16.33287	
+k__Bacteria|p__Firmicutes|c__Bacilli|o__Lactobacillales|f__Streptococcaceae|g__Streptococcus|s__Streptococcus_sp_zg_86	2|1239|91061|186826|1300|1301|2664091	1.66044	
+k__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Nitrosomonadales|f__Nitrosomonadaceae|g__Nitrosospira|s__Nitrosospira_sp_Nsp13	2|1224|28216|32003|206379|35798|1855332	0.00081	
+k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Micrococcales|f__Micrococcaceae|g__Auritidibacter|s__Auritidibacter_ignavus|t__SGB23951	2|201174|1760|85006|1268|1160973|678932|	60.98242	k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Micrococcales|f__Micrococcaceae|g__Auritidibacter|s__Auritidibacter_sp_NML100628,k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Micrococcales|f__Micrococcaceae|g__Auritidibacter|s__Auritidibacter_sp_NML120636,k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Micrococcales|f__Micrococcaceae|g__Auritidibacter|s__Auritidibacter_sp_NML130574
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Enterobacterales|f__Yersiniaceae|g__Yersinia|s__Yersinia_intermedia|t__SGB10229	2|1224|1236|91347|1903411|629|631|	21.02345	
+k__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Nitrosomonadales|f__Nitrosomonadaceae|g__Nitrosospira|s__Nitrosospira_lacus|t__SGB13342	2|1224|28216|32003|206379|35798|1288494|	16.33287	
+k__Bacteria|p__Firmicutes|c__Bacilli|o__Lactobacillales|f__Streptococcaceae|g__Streptococcus|s__Streptococcus_sp_zg_86|t__SGB82599	2|1239|91061|186826|1300|1301|2664091|	1.66044	
+k__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Nitrosomonadales|f__Nitrosomonadaceae|g__Nitrosospira|s__Nitrosospira_sp_Nsp13|t__SGB13341	2|1224|28216|32003|206379|35798|1855332|	0.00081	k__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Nitrosomonadales|f__Nitrosomonadaceae|g__Nitrosospira|s__Nitrosospira_sp_Nsp5

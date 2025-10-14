@@ -1,0 +1,40 @@
+#mpa_vJun23_CHOCOPhlAnSGB_202403
+#/home/CIBIV/laurenz/.local/share/mamba/envs/metaphlan_env/bin/metaphlan param_uniform_5_rep_0_R1.fastq.gz,param_uniform_5_rep_0_R2.fastq.gz --bowtie2out param_uniform_5_rep_0.bowtie2.bz --bowtie2db /project/laurenz_mbarc/btdb -o ../../results1006/param_uniform_5_rep_0.mpa --input_type fastq --nproc 40 --pres_th 1
+#33076876 reads processed
+#SampleID	Metaphlan_Analysis
+#clade_name	NCBI_tax_id	relative_abundance	additional_species
+k__Bacteria	2	100.0	
+k__Bacteria|p__Deinococcus_Thermus	2|1297	47.9807	
+k__Bacteria|p__Proteobacteria	2|1224	26.99445	
+k__Bacteria|p__Actinobacteria	2|201174	25.02485	
+k__Bacteria|p__Deinococcus_Thermus|c__Deinococci	2|1297|188787	47.9807	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria	2|1224|1236	25.73568	
+k__Bacteria|p__Actinobacteria|c__Actinomycetia	2|201174|1760	25.02485	
+k__Bacteria|p__Proteobacteria|c__Betaproteobacteria	2|1224|28216	1.25878	
+k__Bacteria|p__Deinococcus_Thermus|c__Deinococci|o__Deinococcales	2|1297|188787|118964	47.9807	
+k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Corynebacteriales	2|201174|1760|85007	25.02485	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Alteromonadales	2|1224|1236|135622	21.99609	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Moraxellales	2|1224|1236|2887326	3.73959	
+k__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Neisseriales	2|1224|28216|206351	1.25878	
+k__Bacteria|p__Deinococcus_Thermus|c__Deinococci|o__Deinococcales|f__Deinococcaceae	2|1297|188787|118964|183710	47.9807	
+k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Corynebacteriales|f__Gordoniaceae	2|201174|1760|85007|85026	25.02485	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Alteromonadales|f__Shewanellaceae	2|1224|1236|135622|267890	21.99609	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Moraxellales|f__Moraxellaceae	2|1224|1236|2887326|468	3.73959	
+k__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Neisseriales|f__Neisseriaceae	2|1224|28216|206351|481	1.25878	
+k__Bacteria|p__Deinococcus_Thermus|c__Deinococci|o__Deinococcales|f__Deinococcaceae|g__Deinococcus	2|1297|188787|118964|183710|1298	47.9807	
+k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Corynebacteriales|f__Gordoniaceae|g__Gordonia	2|201174|1760|85007|85026|2053	25.02485	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Alteromonadales|f__Shewanellaceae|g__Shewanella	2|1224|1236|135622|267890|22	21.99609	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Moraxellales|f__Moraxellaceae|g__Acinetobacter	2|1224|1236|2887326|468|469	3.73959	
+k__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Neisseriales|f__Neisseriaceae|g__Neisseria	2|1224|28216|206351|481|482	1.25878	
+k__Bacteria|p__Deinococcus_Thermus|c__Deinococci|o__Deinococcales|f__Deinococcaceae|g__Deinococcus|s__Deinococcus_radiophilus	2|1297|188787|118964|183710|1298|32062	47.9807	
+k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Corynebacteriales|f__Gordoniaceae|g__Gordonia|s__Gordonia_alkanivorans	2|201174|1760|85007|85026|2053|84096	25.02485	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Alteromonadales|f__Shewanellaceae|g__Shewanella|s__Shewanella_frigidimarina	2|1224|1236|135622|267890|22|56812	21.99609	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Moraxellales|f__Moraxellaceae|g__Acinetobacter|s__Acinetobacter_baumannii	2|1224|1236|2887326|468|469|470	3.73565	
+k__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Neisseriales|f__Neisseriaceae|g__Neisseria|s__Neisseria_subflava	2|1224|28216|206351|481|482|28449	1.25878	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Moraxellales|f__Moraxellaceae|g__Acinetobacter|s__Acinetobacter_bereziniae	2|1224|1236|2887326|468|469|106648	0.00394	
+k__Bacteria|p__Deinococcus_Thermus|c__Deinococci|o__Deinococcales|f__Deinococcaceae|g__Deinococcus|s__Deinococcus_radiophilus|t__SGB33440	2|1297|188787|118964|183710|1298|32062|	47.9807	
+k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Corynebacteriales|f__Gordoniaceae|g__Gordonia|s__Gordonia_alkanivorans|t__SGB15791	2|201174|1760|85007|85026|2053|84096|	25.02485	k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Corynebacteriales|f__Gordoniaceae|g__Gordonia|s__Gordonia_sp_135,k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Corynebacteriales|f__Gordoniaceae|g__Gordonia|s__Gordonia_sp_CNJ_863
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Alteromonadales|f__Shewanellaceae|g__Shewanella|s__Shewanella_frigidimarina|t__SGB10329	2|1224|1236|135622|267890|22|56812|	21.99609	k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Alteromonadales|f__Shewanellaceae|g__Shewanella|s__Shewanella_sp_SG44_2,k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Alteromonadales|f__Shewanellaceae|g__Shewanella|s__Shewanella_sp_SR41_2,k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Alteromonadales|f__Shewanellaceae|g__Shewanella|s__Shewanella_sp_11B5
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Moraxellales|f__Moraxellaceae|g__Acinetobacter|s__Acinetobacter_baumannii|t__SGB92563	2|1224|1236|2887326|468|469|470|	3.73565	k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Moraxellales|f__Moraxellaceae|g__Acinetobacter|s__Acinetobacter_sp_Res13_Abat_PEC06_P4_01
+k__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Neisseriales|f__Neisseriaceae|g__Neisseria|s__Neisseria_subflava|t__SGB9450_group	2|1224|28216|206351|481|482|28449|	1.25878	k__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Neisseriales|f__Neisseriaceae|g__Neisseria|s__Neisseria_mucosa,k__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Neisseriales|f__Neisseriaceae|g__Neisseria|s__Neisseria_sp_HMSC058F07,k__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Neisseriales|f__Neisseriaceae|g__Neisseria|s__Neisseria_sp_HMSC072B12,k__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Neisseriales|f__Neisseriaceae|g__Neisseria|s__Neisseria_sp_HMSC063B05,k__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Neisseriales|f__Neisseriaceae|g__Neisseria|s__Neisseria_sp_HMSC071A01,k__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Neisseriales|f__Neisseriaceae|g__Neisseria|s__Neisseria_perflava
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Moraxellales|f__Moraxellaceae|g__Acinetobacter|s__Acinetobacter_bereziniae|t__SGB10379	2|1224|1236|2887326|468|469|106648|	0.00394	k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Moraxellales|f__Moraxellaceae|g__Acinetobacter|s__Acinetobacter_sp_WC_743,k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Moraxellales|f__Moraxellaceae|g__Acinetobacter|s__Acinetobacter_sp_Ag2,k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Moraxellales|f__Moraxellaceae|g__Acinetobacter|s__Acinetobacter_sp_TGL_Y2,k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Moraxellales|f__Moraxellaceae|g__Acinetobacter|s__Acinetobacter_sp_Tol_5

@@ -1,0 +1,47 @@
+#mpa_vJun23_CHOCOPhlAnSGB_202403
+#/home/CIBIV/laurenz/.local/share/mamba/envs/metaphlan_env/bin/metaphlan param_uniform_5_rep_4_R1.fastq.gz,param_uniform_5_rep_4_R2.fastq.gz --bowtie2out param_uniform_5_rep_4.bowtie2.bz --bowtie2db /project/laurenz_mbarc/btdb -o ../../results1006/param_uniform_5_rep_4.mpa --input_type fastq --nproc 40 --pres_th 1
+#25099904 reads processed
+#SampleID	Metaphlan_Analysis
+#clade_name	NCBI_tax_id	relative_abundance	additional_species
+k__Bacteria	2	100.0	
+k__Bacteria|p__Bacteroidota	2|976	38.55059	
+k__Bacteria|p__Cyanobacteria	2|1117	25.26769	
+k__Bacteria|p__Firmicutes	2|1239	19.26864	
+k__Bacteria|p__Actinobacteria	2|201174	14.00494	
+k__Bacteria|p__Proteobacteria	2|1224	2.90814	
+k__Bacteria|p__Bacteroidota|c__Flavobacteriia	2|976|117743	38.55059	
+k__Bacteria|p__Cyanobacteria|c__Cyanobacteria_unclassified	2|1117|	25.26769	
+k__Bacteria|p__Firmicutes|c__Clostridia	2|1239|186801	19.26864	
+k__Bacteria|p__Actinobacteria|c__Actinomycetia	2|201174|1760	14.00494	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria	2|1224|1236	2.90814	
+k__Bacteria|p__Bacteroidota|c__Flavobacteriia|o__Flavobacteriales	2|976|117743|200644	38.55059	
+k__Bacteria|p__Cyanobacteria|c__Cyanobacteria_unclassified|o__Pseudanabaenales	2|1117||2881377	25.26769	
+k__Bacteria|p__Firmicutes|c__Clostridia|o__Eubacteriales	2|1239|186801|186802	19.26864	
+k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Micrococcales	2|201174|1760|85006	14.00494	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Pseudomonadales	2|1224|1236|72274	2.90814	
+k__Bacteria|p__Bacteroidota|c__Flavobacteriia|o__Flavobacteriales|f__Flavobacteriaceae	2|976|117743|200644|49546	38.55059	
+k__Bacteria|p__Cyanobacteria|c__Cyanobacteria_unclassified|o__Pseudanabaenales|f__Thermosynechococcaceae	2|1117||2881377|2881378	25.26769	
+k__Bacteria|p__Firmicutes|c__Clostridia|o__Eubacteriales|f__Clostridiaceae	2|1239|186801|186802|31979	19.26864	
+k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Micrococcales|f__Cellulomonadaceae	2|201174|1760|85006|85016	14.00494	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Pseudomonadales|f__Marinobacteraceae	2|1224|1236|72274|2887365	2.90814	
+k__Bacteria|p__Bacteroidota|c__Flavobacteriia|o__Flavobacteriales|f__Flavobacteriaceae|g__Flavobacterium	2|976|117743|200644|49546|237	38.55059	
+k__Bacteria|p__Cyanobacteria|c__Cyanobacteria_unclassified|o__Pseudanabaenales|f__Thermosynechococcaceae|g__Thermosynechococcus	2|1117||2881377|2881378|146785	25.26769	
+k__Bacteria|p__Firmicutes|c__Clostridia|o__Eubacteriales|f__Clostridiaceae|g__Clostridium	2|1239|186801|186802|31979|1485	19.26864	
+k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Micrococcales|f__Cellulomonadaceae|g__Cellulomonas	2|201174|1760|85006|85016|1707	14.00494	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Pseudomonadales|f__Marinobacteraceae|g__Marinobacter	2|1224|1236|72274|2887365|2742	2.90814	
+k__Bacteria|p__Bacteroidota|c__Flavobacteriia|o__Flavobacteriales|f__Flavobacteriaceae|g__Flavobacterium|s__Flavobacterium_channae	2|976|117743|200644|49546|237|2897181	38.55059	
+k__Bacteria|p__Cyanobacteria|c__Cyanobacteria_unclassified|o__Pseudanabaenales|f__Thermosynechococcaceae|g__Thermosynechococcus|s__Thermosynechococcus_sp_CL_1	2|1117||2881377|2881378|146785|2583530	25.26362	
+k__Bacteria|p__Firmicutes|c__Clostridia|o__Eubacteriales|f__Clostridiaceae|g__Clostridium|s__Clostridium_drakei	2|1239|186801|186802|31979|1485|332101	19.26864	
+k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Micrococcales|f__Cellulomonadaceae|g__Cellulomonas|s__Cellulomonas_fimi	2|201174|1760|85006|85016|1707|1708	14.0037	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Pseudomonadales|f__Marinobacteraceae|g__Marinobacter|s__Marinobacter_sediminum	2|1224|1236|72274|2887365|2742|256323	2.83193	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Pseudomonadales|f__Marinobacteraceae|g__Marinobacter|s__Marinobacter_alexandrii	2|1224|1236|72274|2887365|2742|2570351	0.07621	
+k__Bacteria|p__Cyanobacteria|c__Cyanobacteria_unclassified|o__Pseudanabaenales|f__Thermosynechococcaceae|g__Thermosynechococcus|s__Thermosynechococcus_sp_HN_54	2|1117||2881377|2881378|146785|2933959	0.00408	
+k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Micrococcales|f__Cellulomonadaceae|g__Cellulomonas|s__Cellulomonas_algicola	2|201174|1760|85006|85016|1707|2071633	0.00124	
+k__Bacteria|p__Bacteroidota|c__Flavobacteriia|o__Flavobacteriales|f__Flavobacteriaceae|g__Flavobacterium|s__Flavobacterium_channae|t__SGB109353	2|976|117743|200644|49546|237|2897181|	38.55059	
+k__Bacteria|p__Cyanobacteria|c__Cyanobacteria_unclassified|o__Pseudanabaenales|f__Thermosynechococcaceae|g__Thermosynechococcus|s__Thermosynechococcus_sp_CL_1|t__SGB80524	2|1117||2881377|2881378|146785|2583530|	25.26362	k__Bacteria|p__Cyanobacteria|c__Cyanobacteria_unclassified|o__Pseudanabaenales|f__Thermosynechococcaceae|g__Thermosynechococcus|s__Thermosynechococcus_sp_TA_1
+k__Bacteria|p__Firmicutes|c__Clostridia|o__Eubacteriales|f__Clostridiaceae|g__Clostridium|s__Clostridium_drakei|t__SGB6212	2|1239|186801|186802|31979|1485|332101|	19.26864	k__Bacteria|p__Firmicutes|c__Clostridia|o__Eubacteriales|f__Clostridiaceae|g__Clostridium|s__Clostridium_scatologenes
+k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Micrococcales|f__Cellulomonadaceae|g__Cellulomonas|s__Cellulomonas_fimi|t__SGB16080	2|201174|1760|85006|85016|1707|1708|	14.0037	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Pseudomonadales|f__Marinobacteraceae|g__Marinobacter|s__Marinobacter_sediminum|t__SGB92619	2|1224|1236|72274|2887365|2742|256323|	2.83193	
+k__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Pseudomonadales|f__Marinobacteraceae|g__Marinobacter|s__Marinobacter_alexandrii|t__SGB56872	2|1224|1236|72274|2887365|2742|2570351|	0.07621	
+k__Bacteria|p__Cyanobacteria|c__Cyanobacteria_unclassified|o__Pseudanabaenales|f__Thermosynechococcaceae|g__Thermosynechococcus|s__Thermosynechococcus_sp_HN_54|t__SGB109571	2|1117||2881377|2881378|146785|2933959|	0.00408	
+k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Micrococcales|f__Cellulomonadaceae|g__Cellulomonas|s__Cellulomonas_algicola|t__SGB34234	2|201174|1760|85006|85016|1707|2071633|	0.00124	k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Micrococcales|f__Cellulomonadaceae|g__Cellulomonas|s__Cellulomonas_septica,k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Micrococcales|f__Cellulomonadaceae|g__Cellulomonas|s__Cellulomonas_sp_H30R_01,k__Bacteria|p__Actinobacteria|c__Actinomycetia|o__Micrococcales|f__Cellulomonadaceae|g__Cellulomonas|s__Cellulomonas_aurantiaca

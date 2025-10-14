@@ -1,0 +1,432 @@
+name	taxonomy_id	taxonomy_lvl	kraken_assigned_reads	added_reads	new_est_reads	fraction_total_reads	Bracken_estimate	GuaCAMOLE_estimate	GuaCAMOLE_est_eff	GC content	Taxon Removal Cycle
+Pseudomonas sp. S49	1573720	S	921053	1953671	2874724	0.20458	0.13904	nan	nan	60	1.0
+Pseudomonas sp. R84	1573712	S	1269	1385	2654	0.00019	0.00010	nan	nan	61	1.0
+Pseudomonas sp. A34-9	3034675	S	1130	1187	2317	0.00016	0.00008	nan	nan	61	1.0
+Pseudomonas sp. SCA2728.1_7	2825975	S	1129	1255	2384	0.00017	0.00009	nan	nan	61	1.0
+Pseudomonas sp. DTU12.3	2073078	S	933	967	1900	0.00014	0.00007	nan	nan	60	1.0
+Pseudomonas sp. FP2196	2954086	S	790	813	1603	0.00011	0.00006	nan	nan	61	1.0
+Pseudomonas sp. NIBR-H-19	2901380	S	778	800	1578	0.00011	0.00006	nan	nan	60	1.0
+Pseudomonas sp. Seg1	2678259	S	731	755	1486	0.00011	0.00005	nan	nan	61	1.0
+Pseudomonas sp. RU47	2005388	S	640	1314	1954	0.00014	0.00009	nan	nan	60	1.0
+Pseudomonas sp. P108	1837993	S	551	1113	1664	0.00012	0.00008	nan	nan	60	1.0
+Pseudomonas sp. BW7P1	2973088	S	388	399	787	0.00006	0.00003	nan	nan	62	1.0
+Pseudomonas sp. B21-051	2895491	S	334	361	695	0.00005	0.00003	nan	nan	62	1.0
+Pseudomonas sp. Z003-0.4C(8344-21)	1855380	S	326	364	690	0.00005	0.00003	nan	nan	61	1.0
+Pseudomonas sp. HS6	2850559	S	284	297	581	0.00004	0.00002	nan	nan	61	1.0
+Pseudomonas sp. N3-W	2975049	S	281	285	566	0.00004	0.00002	nan	nan	61	1.0
+Pseudomonas sp. URMO17WK12:I11	1283291	S	271	319	590	0.00004	0.00002	nan	nan	61	1.0
+Pseudomonas sp. B21-041	2895487	S	232	383	615	0.00004	0.00003	nan	nan	60	1.0
+Pseudomonas sp. B21-040	2895486	S	224	228	452	0.00003	0.00002	nan	nan	61	1.0
+Pseudomonas sp. SC3(2021)	2871493	S	216	270	486	0.00003	0.00002	nan	nan	62	1.0
+Pseudomonas sp. B21-021	2895476	S	206	230	436	0.00003	0.00002	nan	nan	62	1.0
+Pseudomonas sp. 31-12	2201356	S	205	212	417	0.00003	0.00002	nan	nan	61	1.0
+Pseudomonas sp. AO-1	2855434	S	202	236	438	0.00003	0.00002	nan	nan	61	1.0
+Pseudomonas sp. S34	1573718	S	197	202	399	0.00003	0.00001	nan	nan	62	1.0
+Pseudomonas sp. IzPS59	2774459	S	187	202	389	0.00003	0.00001	nan	nan	62	1.0
+Pseudomonas sp. PP3	2815936	S	179	186	365	0.00003	0.00001	nan	nan	61	1.0
+Pseudomonas sp. WJP1	2986947	S	174	178	352	0.00003	0.00001	nan	nan	62	1.0
+Pseudomonas sp. B21-053	2895493	S	170	178	348	0.00002	0.00001	nan	nan	61	1.0
+Pseudomonas sp. MPC6	2498848	S	169	173	342	0.00002	0.00001	nan	nan	62	1.0
+Pseudomonas sp. B21-015	2895473	S	160	166	326	0.00002	0.00001	nan	nan	61	1.0
+Pseudomonas sp. B21-048	2895490	S	160	167	327	0.00002	0.00001	nan	nan	60	1.0
+Pseudomonas sp. ACM7	2052956	S	150	158	308	0.00002	0.00001	nan	nan	60	1.0
+Pseudomonas sp. AN-B15	2697023	S	149	225	374	0.00003	0.00002	nan	nan	61	1.0
+Pseudomonas sp. DR48	2871095	S	142	148	290	0.00002	0.00001	nan	nan	60	1.0
+Pseudomonas sp. FP198	2954084	S	134	136	270	0.00002	0.00001	nan	nan	62	1.0
+Pseudomonas sp. B10	118613	S	133	164	297	0.00002	0.00001	nan	nan	61	1.0
+Pseudomonas sp. 7SR1	1881017	S	133	134	267	0.00002	0.00001	nan	nan	63	1.0
+Pseudomonas sp. DR 5-09	1534110	S	132	170	302	0.00002	0.00001	nan	nan	62	1.0
+Pseudomonas sp. ADAK18	2730848	S	132	133	265	0.00002	0.00001	nan	nan	60	1.0
+Pseudomonas sp. PIA16	2931382	S	128	128	256	0.00002	0.00001	nan	nan	64	1.0
+Pseudomonas sp. Cab53	2678258	S	117	120	237	0.00002	0.00001	nan	nan	63	1.0
+Pseudomonas sp. FP1742	2954079	S	114	126	240	0.00002	0.00001	nan	nan	61	1.0
+Pseudomonas sp. Ost2	2678260	S	113	114	227	0.00002	0.00001	nan	nan	64	1.0
+Pseudomonas sp. 3-2	2867408	S	110	140	250	0.00002	0.00001	nan	nan	62	1.0
+Pseudomonas sp. Y5-11	2749808	S	108	166	274	0.00002	0.00001	nan	nan	61	1.0
+Pseudomonas sp. BSw22131	3002903	S	107	107	214	0.00002	0.00001	nan	nan	60	1.0
+Pseudomonas sp. LS1212	2972478	S	103	103	206	0.00001	0.00001	nan	nan	62	1.0
+Pseudomonas sp. Tri1	2823875	S	102	105	207	0.00001	0.00001	nan	nan	62	1.0
+Pseudomonas fluorescens	294	S	391	489	880	0.00006	0.00003	nan	nan	62	1.0
+Pseudomonas syringae	317	S	129	218	347	0.00002	0.00002	nan	nan	60	1.0
+Pseudomonas chlororaphis	587753	S	133	162	295	0.00002	0.00001	nan	nan	64	1.0
+Pseudomonas putida	303	S	203	288	491	0.00003	0.00002	nan	nan	63	1.0
+Pseudomonas aeruginosa	287	S	103	919	1022	0.00007	0.00007	nan	nan	61	1.0
+Pseudomonas zeae	2745510	S	124	135	259	0.00002	0.00001	nan	nan	61	1.0
+Francisella noatunensis	657445	S	1576335	1679104	3255439	0.23168	0.11950	nan	nan	34	1.0
+Francisella philomiragia	28110	S	1580	1655	3235	0.00023	0.00012	nan	nan	33	1.0
+Francisella orientalis	299583	S	584	697	1281	0.00009	0.00005	nan	nan	33	1.0
+Francisella tularensis	263	S	204	323	527	0.00004	0.00002	nan	nan	33	1.0
+Francisella hispaniensis	622488	S	152	153	305	0.00002	0.00001	nan	nan	32	1.0
+Bosea vestrisii	151416	S	3302034	3307390	6609424	0.47037	0.23538	nan	nan	67	1.0
+Streptomyces sp. 769	1262452	S	144056	358571	502627	0.03577	0.02552	nan	nan	72	1.0
+Streptomyces sp. A1-5	2738410	S	100029	372253	472282	0.03361	0.02649	nan	nan	72	1.0
+Streptomyces sp. BHT-5-2	2866715	S	55242	58431	113673	0.00809	0.00416	nan	nan	72	1.0
+Streptomyces sp. GS7	2692234	S	32162	33609	65771	0.00468	0.00239	nan	nan	73	1.0
+Streptomyces sp. WZ-12	3030210	S	31626	32827	64453	0.00459	0.00234	nan	nan	72	1.0
+Streptomyces sp. MST-110588	2833628	S	3241	3311	6552	0.00047	0.00024	nan	nan	72	1.0
+Streptomyces sp. 2323.1	1938841	S	2738	3303	6041	0.00043	0.00024	nan	nan	71	1.0
+Streptomyces sp. LX-29	2900152	S	2234	2289	4523	0.00032	0.00016	nan	nan	73	1.0
+Streptomyces sp. BPTC-684	3043734	S	2123	2212	4335	0.00031	0.00016	nan	nan	72	1.0
+Streptomyces sp. S1D4-11	2721246	S	2100	2917	5017	0.00036	0.00021	nan	nan	70	1.0
+Streptomyces sp. YIM 121038	2136401	S	1781	1880	3661	0.00026	0.00013	nan	nan	73	1.0
+Streptomyces sp. VNUA116	3062449	S	1701	1772	3473	0.00025	0.00013	nan	nan	73	1.0
+Streptomyces sp. XD-27	3062779	S	1662	1709	3371	0.00024	0.00012	nan	nan	73	1.0
+Streptomyces sp. MOE7	1961713	S	1563	2323	3886	0.00028	0.00017	nan	nan	72	1.0
+Streptomyces sp. NEAU-S7GS2	2202000	S	1256	2532	3788	0.00027	0.00018	nan	nan	72	1.0
+Streptomyces sp. RPA4-5	2721245	S	1152	7446	8598	0.00061	0.00053	nan	nan	72	1.0
+Streptomyces sp. FXJ1.172	710705	S	1105	1203	2308	0.00016	0.00009	nan	nan	71	1.0
+Streptomyces sp. Rer75	2750011	S	1074	1262	2336	0.00017	0.00009	nan	nan	72	1.0
+Streptomyces sp. LBUM 1480	2609808	S	1051	9542	10593	0.00075	0.00068	nan	nan	72	1.0
+Streptomyces sp. So13.3	2136173	S	1019	1030	2049	0.00015	0.00007	nan	nan	71	1.0
+Streptomyces sp. Go40/10	2825844	S	1003	1119	2122	0.00015	0.00008	nan	nan	73	1.0
+Streptomyces sp. SCSIO ZS0520	2892996	S	976	1000	1976	0.00014	0.00007	nan	nan	74	1.0
+Streptomyces sp. CB01881	2078691	S	970	985	1955	0.00014	0.00007	nan	nan	73	1.0
+Streptomyces sp. CB00271	2750025	S	968	1673	2641	0.00019	0.00012	nan	nan	72	1.0
+Streptomyces sp. MBT27	1488356	S	947	982	1929	0.00014	0.00007	nan	nan	71	1.0
+Streptomyces sp. NA02950	2742137	S	937	957	1894	0.00013	0.00007	nan	nan	72	1.0
+Streptomyces sp. HUAS CB01	3053466	S	915	948	1863	0.00013	0.00007	nan	nan	73	1.0
+Streptomyces sp. 891-h	2720714	S	911	921	1832	0.00013	0.00007	nan	nan	71	1.0
+Streptomyces sp. NA04227	2742136	S	900	917	1817	0.00013	0.00007	nan	nan	72	1.0
+Streptomyces sp. RTd22	1841249	S	876	1012	1888	0.00013	0.00007	nan	nan	72	1.0
+Streptomyces sp. PCS3-D2	1460244	S	871	952	1823	0.00013	0.00007	nan	nan	72	1.0
+Streptomyces sp. CGMCC 4.7035	3061628	S	864	911	1775	0.00013	0.00006	nan	nan	71	1.0
+Streptomyces sp. RPA4-2	2721244	S	858	917	1775	0.00013	0.00007	nan	nan	72	1.0
+Streptomyces sp. NBC_00162	2903629	S	848	904	1752	0.00012	0.00006	nan	nan	71	1.0
+Streptomyces sp. G7(2002)	2971798	S	831	3565	4396	0.00031	0.00025	nan	nan	72	1.0
+Streptomyces sp. YPW6	2840373	S	805	936	1741	0.00012	0.00007	nan	nan	73	1.0
+Streptomyces sp. SCA4-21	3026192	S	771	1477	2248	0.00016	0.00011	nan	nan	72	1.0
+Streptomyces sp. S465	2979468	S	738	1442	2180	0.00016	0.00010	nan	nan	72	1.0
+Streptomyces sp. RLB1-33	2721243	S	732	2468	3200	0.00023	0.00018	nan	nan	72	1.0
+Streptomyces sp. TLI_053	1855352	S	722	730	1452	0.00010	0.00005	nan	nan	74	1.0
+Streptomyces sp. CMB-StM0423	2059884	S	719	854	1573	0.00011	0.00006	nan	nan	73	1.0
+Streptomyces sp. NHF165	2175864	S	708	714	1422	0.00010	0.00005	nan	nan	74	1.0
+Streptomyces sp. HSG2	2797167	S	704	711	1415	0.00010	0.00005	nan	nan	73	1.0
+Streptomyces sp. SirexAA-E	862751	S	698	740	1438	0.00010	0.00005	nan	nan	73	1.0
+Streptomyces sp. HUAS YS2	3081768	S	671	702	1373	0.00010	0.00005	nan	nan	72	1.0
+Streptomyces sp. AM2-3-1	3075824	S	654	670	1324	0.00009	0.00005	nan	nan	71	1.0
+Streptomyces sp. Caat 7-52	2949637	S	654	707	1361	0.00010	0.00005	nan	nan	72	1.0
+Streptomyces sp. AM 4-1-1	3028710	S	638	664	1302	0.00009	0.00005	nan	nan	72	1.0
+Streptomyces sp. Li-HN-5-11	3075432	S	628	658	1286	0.00009	0.00005	nan	nan	72	1.0
+Streptomyces sp. GMY02	1333528	S	627	635	1262	0.00009	0.00005	nan	nan	71	1.0
+Streptomyces sp. WAC 01529	2203205	S	615	666	1281	0.00009	0.00005	nan	nan	72	1.0
+Streptomyces sp. C8S0	2585716	S	615	632	1247	0.00009	0.00005	nan	nan	73	1.0
+Streptomyces sp. AM8-1-1	3075825	S	614	634	1248	0.00009	0.00005	nan	nan	70	1.0
+Streptomyces sp. SAT1	1849967	S	613	642	1255	0.00009	0.00005	nan	nan	74	1.0
+Streptomyces sp. SN-593	659352	S	603	609	1212	0.00009	0.00004	nan	nan	74	1.0
+Streptomyces sp. P9-2B-2	3057114	S	600	3945	4545	0.00032	0.00028	nan	nan	72	1.0
+Streptomyces sp. DSM 40868	2721173	S	595	642	1237	0.00009	0.00005	nan	nan	72	1.0
+Streptomyces sp. CdTB01	1725411	S	585	616	1201	0.00009	0.00004	nan	nan	72	1.0
+Streptomyces sp. Je 1-369	2966192	S	564	623	1187	0.00008	0.00004	nan	nan	72	1.0
+Streptomyces sp. MMBL 11-1	3026420	S	562	668	1230	0.00009	0.00005	nan	nan	72	1.0
+Streptomyces sp. FZ201	3057122	S	561	598	1159	0.00008	0.00004	nan	nan	72	1.0
+Streptomyces sp. ITFR-21	3075199	S	552	557	1109	0.00008	0.00004	nan	nan	72	1.0
+Streptomyces sp. SM18	1736046	S	551	578	1129	0.00008	0.00004	nan	nan	72	1.0
+Streptomyces sp. Mut1	3033811	S	546	578	1124	0.00008	0.00004	nan	nan	72	1.0
+Streptomyces sp. ADI95-16	1522758	S	535	692	1227	0.00009	0.00005	nan	nan	73	1.0
+Streptomyces sp. RerS4	2942449	S	534	564	1098	0.00008	0.00004	nan	nan	73	1.0
+Streptomyces sp. Tu 2975	2676871	S	529	559	1088	0.00008	0.00004	nan	nan	72	1.0
+Streptomyces sp. W1SF4	2305220	S	527	558	1085	0.00008	0.00004	nan	nan	73	1.0
+Streptomyces sp. HUAS 15-9	2981136	S	526	549	1075	0.00008	0.00004	nan	nan	71	1.0
+Streptomyces sp. MA3_2.13	2867410	S	520	521	1041	0.00007	0.00004	nan	nan	72	1.0
+Streptomyces sp. N50	3081765	S	512	525	1037	0.00007	0.00004	nan	nan	71	1.0
+Streptomyces sp. HUAS 2-6	3004093	S	508	551	1059	0.00008	0.00004	nan	nan	72	1.0
+Streptomyces sp. AM 2-1-1	3028709	S	506	520	1026	0.00007	0.00004	nan	nan	72	1.0
+Streptomyces sp. 11x1	3038642	S	499	554	1053	0.00007	0.00004	nan	nan	71	1.0
+Streptomyces sp. Go-475	2072505	S	496	561	1057	0.00008	0.00004	nan	nan	73	1.0
+Streptomyces sp. A2-16	2781734	S	494	530	1024	0.00007	0.00004	nan	nan	71	1.0
+Streptomyces sp. JB150	2714844	S	491	530	1021	0.00007	0.00004	nan	nan	73	1.0
+Streptomyces sp. S4.7	2705439	S	481	516	997	0.00007	0.00004	nan	nan	71	1.0
+Streptomyces sp. 135	2838850	S	473	511	984	0.00007	0.00004	nan	nan	72	1.0
+Streptomyces sp. P3	2135430	S	463	484	947	0.00007	0.00003	nan	nan	72	1.0
+Streptomyces sp. HU2014	2939414	S	460	1282	1742	0.00012	0.00009	nan	nan	73	1.0
+Streptomyces sp. Z423-1	2730915	S	459	486	945	0.00007	0.00003	nan	nan	72	1.0
+Streptomyces sp. LRE541	2931983	S	458	476	934	0.00007	0.00003	nan	nan	71	1.0
+Streptomyces sp. GQFP	2907545	S	457	470	927	0.00007	0.00003	nan	nan	70	1.0
+Streptomyces sp. BB1-1-1	3074430	S	455	515	970	0.00007	0.00004	nan	nan	72	1.0
+Streptomyces sp. FIT100	2837956	S	450	481	931	0.00007	0.00003	nan	nan	72	1.0
+Streptomyces sp. NEAU-sy36	2751189	S	442	474	916	0.00007	0.00003	nan	nan	73	1.0
+Streptomyces sp. WAC 01438	2203204	S	440	474	914	0.00007	0.00003	nan	nan	73	1.0
+Streptomyces sp. CB04723	2748873	S	439	801	1240	0.00009	0.00006	nan	nan	73	1.0
+Streptomyces sp. HM190	2695266	S	435	461	896	0.00006	0.00003	nan	nan	73	1.0
+Streptomyces sp. 3214.6	1882757	S	426	451	877	0.00006	0.00003	nan	nan	71	1.0
+Streptomyces sp. SCUT-3	2684469	S	422	428	850	0.00006	0.00003	nan	nan	74	1.0
+Streptomyces sp. KMM 9044	2744474	S	421	440	861	0.00006	0.00003	nan	nan	72	1.0
+Streptomyces sp. CA-210063	2801029	S	420	474	894	0.00006	0.00003	nan	nan	71	1.0
+Streptomyces sp. ITFR-6	3075197	S	416	446	862	0.00006	0.00003	nan	nan	71	1.0
+Streptomyces sp. HL-66	2964669	S	415	431	846	0.00006	0.00003	nan	nan	74	1.0
+Streptomyces sp. 71268	3002640	S	403	442	845	0.00006	0.00003	nan	nan	73	1.0
+Streptomyces sp. ITFR-16	3075198	S	398	439	837	0.00006	0.00003	nan	nan	72	1.0
+Streptomyces sp. fd1-xmd	1812480	S	398	462	860	0.00006	0.00003	nan	nan	73	1.0
+Streptomyces sp. INR7	2607753	S	390	470	860	0.00006	0.00003	nan	nan	72	1.0
+Streptomyces sp. CNQ-509	444103	S	374	586	960	0.00007	0.00004	nan	nan	73	1.0
+Streptomyces sp. QHH-9511	2684468	S	372	388	760	0.00005	0.00003	nan	nan	72	1.0
+Streptomyces sp. HP-A2021	2927875	S	370	445	815	0.00006	0.00003	nan	nan	72	1.0
+Streptomyces sp. WMMC500	3015154	S	367	384	751	0.00005	0.00003	nan	nan	74	1.0
+Streptomyces sp. DSM 40750	2801030	S	358	400	758	0.00005	0.00003	nan	nan	71	1.0
+Streptomyces sp. T12	477697	S	344	369	713	0.00005	0.00003	nan	nan	71	1.0
+Streptomyces sp. TN58	234612	S	336	384	720	0.00005	0.00003	nan	nan	72	1.0
+Streptomyces sp. Alt3	3033808	S	334	372	706	0.00005	0.00003	nan	nan	71	1.0
+Streptomyces sp. ST1015	1848900	S	333	342	675	0.00005	0.00002	nan	nan	72	1.0
+Streptomyces sp. 11-1-2	1851167	S	318	653	971	0.00007	0.00005	nan	nan	72	1.0
+Streptomyces sp. HUAS 31	3020055	S	314	401	715	0.00005	0.00003	nan	nan	72	1.0
+Streptomyces sp. HUAS 5	3031124	S	309	325	634	0.00005	0.00002	nan	nan	72	1.0
+Streptomyces sp. AM 3-1-1	3028711	S	308	712	1020	0.00007	0.00005	nan	nan	73	1.0
+Streptomyces sp. HUAS 14-6	2981135	S	294	315	609	0.00004	0.00002	nan	nan	73	1.0
+Streptomyces sp. S063	2005885	S	280	384	664	0.00005	0.00003	nan	nan	72	1.0
+Streptomyces sp. VNUA24	3031131	S	279	342	621	0.00004	0.00002	nan	nan	72	1.0
+Streptomyces sp. FXY-T5	3064901	S	278	317	595	0.00004	0.00002	nan	nan	72	1.0
+Streptomyces sp. MRC013	2898276	S	271	286	557	0.00004	0.00002	nan	nan	74	1.0
+Streptomyces sp. EAS-AB2608	2779671	S	270	554	824	0.00006	0.00004	nan	nan	73	1.0
+Streptomyces sp. M56	1495638	S	267	787	1054	0.00008	0.00006	nan	nan	72	1.0
+Streptomyces sp. ID38640	1265399	S	265	1403	1668	0.00012	0.00010	nan	nan	72	1.0
+Streptomyces sp. WAC 06738	2203210	S	248	395	643	0.00005	0.00003	nan	nan	73	1.0
+Streptomyces sp. M92	2944250	S	246	275	521	0.00004	0.00002	nan	nan	72	1.0
+Streptomyces sp. WA6-1-16	2879427	S	239	360	599	0.00004	0.00003	nan	nan	73	1.0
+Streptomyces sp. CFMR 7	1649184	S	233	439	672	0.00005	0.00003	nan	nan	72	1.0
+Streptomyces sp. SYP-A7193	2662065	S	229	283	512	0.00004	0.00002	nan	nan	73	1.0
+Streptomyces sp. SUK 48	2582831	S	225	272	497	0.00004	0.00002	nan	nan	73	1.0
+Streptomyces sp. 3211	1964449	S	225	402	627	0.00004	0.00003	nan	nan	72	1.0
+Streptomyces sp. S8	1837283	S	216	283	499	0.00004	0.00002	nan	nan	73	1.0
+Streptomyces sp. CGMCC 4.1456	3074897	S	210	313	523	0.00004	0.00002	nan	nan	72	1.0
+Streptomyces sp. AgN23	1188315	S	203	567	770	0.00005	0.00004	nan	nan	72	1.0
+Streptomyces sp. AMCC400023	2056258	S	201	275	476	0.00003	0.00002	nan	nan	72	1.0
+Streptomyces sp. SH5	3041765	S	190	266	456	0.00003	0.00002	nan	nan	72	1.0
+Streptomyces sp. Alt1	3033810	S	190	756	946	0.00007	0.00005	nan	nan	72	1.0
+Streptomyces sp. HUAS CX7	3062782	S	186	2316	2502	0.00018	0.00016	nan	nan	72	1.0
+Streptomyces sp. WAC00288	2094021	S	163	538	701	0.00005	0.00004	nan	nan	72	1.0
+Streptomyces sp. CB09001	2083284	S	157	193	350	0.00002	0.00001	nan	nan	72	1.0
+Streptomyces sp. S501	2420135	S	156	1254	1410	0.00010	0.00009	nan	nan	72	1.0
+Streptomyces sp. NA07423	3042026	S	134	441	575	0.00004	0.00003	nan	nan	72	1.0
+Streptomyces sp. VN1	1821625	S	134	221	355	0.00003	0.00002	nan	nan	72	1.0
+Streptomyces sp. WY228	2855836	S	132	509	641	0.00005	0.00004	nan	nan	72	1.0
+Streptomyces sp. JUS-F4	2951988	S	132	505	637	0.00005	0.00004	nan	nan	72	1.0
+Streptomyces sp. CB09030	2913412	S	127	444	571	0.00004	0.00003	nan	nan	72	1.0
+Streptomyces sp. GF20	2692235	S	122	573	695	0.00005	0.00004	nan	nan	73	1.0
+Streptomyces sp. CA-278952	2980556	S	119	632	751	0.00005	0.00004	nan	nan	72	1.0
+Streptomyces sp. S1A1-7	2594459	S	116	1235	1351	0.00010	0.00009	nan	nan	72	1.0
+Streptomyces sp. CCM_MD2014	1561022	S	115	165	280	0.00002	0.00001	nan	nan	73	1.0
+Streptomyces sp. RLB3-6	2594457	S	110	4196	4306	0.00031	0.00030	nan	nan	72	1.0
+Streptomyces sp. XC 2026	2782004	S	109	145	254	0.00002	0.00001	nan	nan	73	1.0
+Streptomyces sp. Sge12	1972846	S	109	219	328	0.00002	0.00002	nan	nan	72	1.0
+Streptomyces sp. SNU607	2718875	S	104	768	872	0.00006	0.00005	nan	nan	72	1.0
+Streptomyces sp. HNA39	2850561	S	103	152	255	0.00002	0.00001	nan	nan	72	1.0
+Streptomyces noursei	1971	S	170451	207114	377565	0.02687	0.01474	nan	nan	73	1.0
+Streptomyces yunnanensis	156453	S	122648	330647	453295	0.03226	0.02353	nan	nan	72	1.0
+Streptomyces lydicus	47763	S	8664	11408	20072	0.00143	0.00081	nan	nan	72	1.0
+Streptomyces gilvosporeus	553510	S	7369	7588	14957	0.00106	0.00054	nan	nan	71	1.0
+Streptomyces halobius	2879846	S	7156	7281	14437	0.00103	0.00052	nan	nan	70	1.0
+Streptomyces nigrescens	1920	S	5941	10567	16508	0.00117	0.00075	nan	nan	72	1.0
+Streptomyces inhibens	2293571	S	5650	5928	11578	0.00082	0.00042	nan	nan	71	1.0
+Streptomyces olivoreticuli	68246	S	5052	5186	10238	0.00073	0.00037	nan	nan	72	1.0
+Streptomyces angustmyceticus	285578	S	4744	5074	9818	0.00070	0.00036	nan	nan	73	1.0
+Streptomyces hygroscopicus	1912	S	2216	3445	5661	0.00040	0.00025	nan	nan	72	1.0
+Streptomyces rapamycinicus	1226757	S	1039	1097	2136	0.00015	0.00008	nan	nan	71	1.0
+Streptomyces violaceusniger	68280	S	545	663	1208	0.00009	0.00005	nan	nan	71	1.0
+Streptomyces yatensis	155177	S	388	485	873	0.00006	0.00003	nan	nan	72	1.0
+Streptomyces koyangensis	188770	S	1161	1514	2675	0.00019	0.00011	nan	nan	74	1.0
+Streptomyces aurantiacus	47760	S	993	1022	2015	0.00014	0.00007	nan	nan	71	1.0
+Streptomyces alboniger	132473	S	811	872	1683	0.00012	0.00006	nan	nan	72	1.0
+Streptomyces cadmiisoli	2184053	S	525	539	1064	0.00008	0.00004	nan	nan	71	1.0
+Streptomyces phaeoluteigriseus	114686	S	468	497	965	0.00007	0.00004	nan	nan	73	1.0
+Streptomyces qaidamensis	1783515	S	255	295	550	0.00004	0.00002	nan	nan	72	1.0
+Streptomyces rimosus	1927	S	3958	4317	8275	0.00059	0.00031	nan	nan	73	1.0
+Streptomyces venezuelae	54571	S	3293	3560	6853	0.00049	0.00025	nan	nan	73	1.0
+Streptomyces auratus	114687	S	3255	3907	7162	0.00051	0.00028	nan	nan	72	1.0
+Streptomyces griseochromogenes	68214	S	3001	3137	6138	0.00044	0.00022	nan	nan	71	1.0
+Streptomyces tubercidicus	47759	S	2942	3205	6147	0.00044	0.00023	nan	nan	71	1.0
+Streptomyces anulatus	1892	S	894	1413	2307	0.00016	0.00010	nan	nan	72	1.0
+Streptomyces graminofaciens	68212	S	738	774	1512	0.00011	0.00006	nan	nan	71	1.0
+Streptomyces griseus	1911	S	325	375	700	0.00005	0.00003	nan	nan	72	1.0
+Streptomyces sp. M54	2759525	S	121	261	382	0.00003	0.00002	nan	nan	73	1.0
+Streptomyces cyaneofuscatus	66883	S	252	332	584	0.00004	0.00002	nan	nan	72	1.0
+Streptomyces microflavus	1919	S	245	523	768	0.00005	0.00004	nan	nan	72	1.0
+Streptomyces luteoverticillatus	66425	S	2432	2496	4928	0.00035	0.00018	nan	nan	73	1.0
+Streptomyces nodosus	40318	S	1956	1996	3952	0.00028	0.00014	nan	nan	71	1.0
+Streptomyces broussonetiae	2686304	S	1839	1960	3799	0.00027	0.00014	nan	nan	72	1.0
+Streptomyces mobaraensis	35621	S	1791	3164	4955	0.00035	0.00023	nan	nan	73	1.0
+Streptomyces roseochromogenus	285450	S	1724	1816	3540	0.00025	0.00013	nan	nan	71	1.0
+Streptomyces endophytica	2991496	S	1713	2151	3864	0.00027	0.00015	nan	nan	73	1.0
+Streptomyces atratus	1893	S	1699	1743	3442	0.00024	0.00012	nan	nan	70	1.0
+Streptomyces rectiverticillatus	173860	S	1685	1748	3433	0.00024	0.00012	nan	nan	73	1.0
+Streptomyces lydicamycinicus	1546107	S	1591	1903	3494	0.00025	0.00014	nan	nan	72	1.0
+Streptomyces decoyicus	249567	S	1512	1758	3270	0.00023	0.00013	nan	nan	71	1.0
+Streptomyces tsukubensis	83656	S	1456	1509	2965	0.00021	0.00011	nan	nan	72	1.0
+Streptomyces formicae	1616117	S	1387	1484	2871	0.00020	0.00011	nan	nan	72	1.0
+Streptomyces durmitorensis	319947	S	1199	1226	2425	0.00017	0.00009	nan	nan	71	1.0
+Streptomyces coeruleorubidus	116188	S	1173	1321	2494	0.00018	0.00009	nan	nan	72	1.0
+Streptomyces armeniacus	83291	S	1156	1161	2317	0.00016	0.00008	nan	nan	73	1.0
+Streptomyces incarnatus	665007	S	1125	1206	2331	0.00017	0.00009	nan	nan	72	1.0
+Streptomyces gobiensis	2875706	S	1091	1098	2189	0.00016	0.00008	nan	nan	70	1.0
+Streptomyces fodineus	1904616	S	1071	1143	2214	0.00016	0.00008	nan	nan	72	1.0
+Streptomyces griseocarneus	51201	S	1063	1093	2156	0.00015	0.00008	nan	nan	73	1.0
+Streptomyces spectabilis	68270	S	1043	1096	2139	0.00015	0.00008	nan	nan	73	1.0
+Streptomyces platensis	58346	S	1025	1310	2335	0.00017	0.00009	nan	nan	72	1.0
+Streptomyces marincola	2878388	S	1024	1028	2052	0.00015	0.00007	nan	nan	74	1.0
+Streptomyces liliifuscus	2797636	S	990	1038	2028	0.00014	0.00007	nan	nan	71	1.0
+Streptomyces collinus	42684	S	973	1064	2037	0.00014	0.00008	nan	nan	73	1.0
+Streptomyces antimycoticus	68175	S	899	1751	2650	0.00019	0.00012	nan	nan	72	1.0
+Streptomyces phaeolivaceus	2653200	S	842	895	1737	0.00012	0.00006	nan	nan	72	1.0
+Streptomyces kanamyceticus	1967	S	836	895	1731	0.00012	0.00006	nan	nan	72	1.0
+Streptomyces clavuligerus	1901	S	826	835	1661	0.00012	0.00006	nan	nan	73	1.0
+Streptomyces qinzhouensis	2599401	S	824	844	1668	0.00012	0.00006	nan	nan	71	1.0
+Streptomyces buecherae	2763006	S	820	873	1693	0.00012	0.00006	nan	nan	73	1.0
+Streptomyces cyanogenus	80860	S	814	886	1700	0.00012	0.00006	nan	nan	73	1.0
+Streptomyces lunaelactis	1535768	S	795	811	1606	0.00011	0.00006	nan	nan	71	1.0
+Streptomyces chartreusis	1969	S	775	928	1703	0.00012	0.00007	nan	nan	72	1.0
+Streptomyces capitiformicae	2014920	S	774	804	1578	0.00011	0.00006	nan	nan	70	1.0
+Streptomyces niveus	193462	S	768	791	1559	0.00011	0.00006	nan	nan	71	1.0
+Streptomyces xanthophaeus	67385	S	762	839	1601	0.00011	0.00006	nan	nan	72	1.0
+Streptomyces laculatispora	887464	S	756	794	1550	0.00011	0.00006	nan	nan	71	1.0
+Streptomyces cynarae	2981134	S	735	760	1495	0.00011	0.00005	nan	nan	71	1.0
+Streptomyces griseorubiginosus	67304	S	725	765	1490	0.00011	0.00005	nan	nan	72	1.0
+Streptomyces alfalfae	1642299	S	704	734	1438	0.00010	0.00005	nan	nan	73	1.0
+Streptomyces aureoverticillatus	66871	S	692	717	1409	0.00010	0.00005	nan	nan	72	1.0
+Streptomyces roseirectus	2768066	S	684	701	1385	0.00010	0.00005	nan	nan	73	1.0
+Streptomyces avermitilis	33903	S	672	698	1370	0.00010	0.00005	nan	nan	72	1.0
+Streptomyces pluripotens	1355015	S	670	683	1353	0.00010	0.00005	nan	nan	70	1.0
+Streptomyces pratensis	1169025	S	664	692	1356	0.00010	0.00005	nan	nan	71	1.0
+Streptomyces albus	1888	S	656	663	1319	0.00009	0.00005	nan	nan	73	1.0
+Streptomyces longhuiensis	2880933	S	655	669	1324	0.00009	0.00005	nan	nan	71	1.0
+Streptomyces hundungensis	1077946	S	631	650	1281	0.00009	0.00005	nan	nan	72	1.0
+Streptomyces alboflavus	67267	S	617	656	1273	0.00009	0.00005	nan	nan	73	1.0
+Streptomyces paludis	2282738	S	597	605	1202	0.00009	0.00004	nan	nan	72	1.0
+Streptomyces tubbatahanensis	2923272	S	588	593	1181	0.00008	0.00004	nan	nan	72	1.0
+Streptomyces gardneri	66892	S	585	643	1228	0.00009	0.00005	nan	nan	72	1.0
+Streptomyces seoulensis	73044	S	576	599	1175	0.00008	0.00004	nan	nan	73	1.0
+Streptomyces katrae	68223	S	570	596	1166	0.00008	0.00004	nan	nan	73	1.0
+Streptomyces antibioticus	1890	S	553	579	1132	0.00008	0.00004	nan	nan	73	1.0
+Streptomyces xanthii	2768069	S	552	567	1119	0.00008	0.00004	nan	nan	73	1.0
+Streptomyces xinghaiensis	1038928	S	548	556	1104	0.00008	0.00004	nan	nan	73	1.0
+Streptomyces peucetius	1950	S	540	555	1095	0.00008	0.00004	nan	nan	71	1.0
+Streptomyces roseicoloratus	2508722	S	534	555	1089	0.00008	0.00004	nan	nan	73	1.0
+Streptomyces akebiae	2865673	S	527	582	1109	0.00008	0.00004	nan	nan	71	1.0
+Streptomyces lavendulae	1914	S	524	550	1074	0.00008	0.00004	nan	nan	73	1.0
+Streptomyces dengpaensis	2049881	S	507	523	1030	0.00007	0.00004	nan	nan	71	1.0
+Streptomyces vietnamensis	362257	S	501	536	1037	0.00007	0.00004	nan	nan	72	1.0
+Streptomyces viridosporus	67581	S	496	528	1024	0.00007	0.00004	nan	nan	73	1.0
+Streptomyces bathyalis	2710756	S	479	481	960	0.00007	0.00003	nan	nan	70	1.0
+Streptomyces vilmorinianum	3051092	S	470	492	962	0.00007	0.00004	nan	nan	72	1.0
+Streptomyces murinus	33900	S	470	931	1401	0.00010	0.00007	nan	nan	72	1.0
+Streptomyces cavourensis	67258	S	468	767	1235	0.00009	0.00005	nan	nan	73	1.0
+Streptomyces chromofuscus	42881	S	466	490	956	0.00007	0.00003	nan	nan	72	1.0
+Streptomyces ficellus	1977088	S	445	461	906	0.00006	0.00003	nan	nan	73	1.0
+Streptomyces calvus	67282	S	443	474	917	0.00007	0.00003	nan	nan	73	1.0
+Streptomyces cinnabarinus	67287	S	439	476	915	0.00007	0.00003	nan	nan	72	1.0
+Streptomyces lienomycini	284035	S	438	490	928	0.00007	0.00003	nan	nan	72	1.0
+Streptomyces mirabilis	68239	S	433	1688	2121	0.00015	0.00012	nan	nan	72	1.0
+Streptomyces libani	68043	S	429	1933	2362	0.00017	0.00014	nan	nan	72	1.0
+Streptomyces genisteinicus	2768068	S	426	436	862	0.00006	0.00003	nan	nan	74	1.0
+Streptomyces coralus	66880	S	425	462	887	0.00006	0.00003	nan	nan	72	1.0
+Streptomyces flavofungini	68200	S	421	451	872	0.00006	0.00003	nan	nan	73	1.0
+Streptomyces lincolnensis	1915	S	419	450	869	0.00006	0.00003	nan	nan	72	1.0
+Streptomyces asoensis	249586	S	403	420	823	0.00006	0.00003	nan	nan	72	1.0
+Streptomyces drozdowiczii	202862	S	396	414	810	0.00006	0.00003	nan	nan	72	1.0
+Streptomyces davaonensis	348043	S	395	428	823	0.00006	0.00003	nan	nan	72	1.0
+Streptomyces tirandamycinicus	2174846	S	393	411	804	0.00006	0.00003	nan	nan	72	1.0
+Streptomyces subrutilus	36818	S	391	408	799	0.00006	0.00003	nan	nan	74	1.0
+Streptomyces fagopyri	2662397	S	390	413	803	0.00006	0.00003	nan	nan	72	1.0
+Streptomyces ambofaciens	1889	S	389	421	810	0.00006	0.00003	nan	nan	73	1.0
+Streptomyces nitrosporeus	28894	S	386	398	784	0.00006	0.00003	nan	nan	72	1.0
+Streptomyces griseoviridis	45398	S	382	394	776	0.00006	0.00003	nan	nan	73	1.0
+Streptomyces pristinaespiralis	38300	S	376	399	775	0.00006	0.00003	nan	nan	72	1.0
+Streptomyces galilaeus	33899	S	376	403	779	0.00006	0.00003	nan	nan	72	1.0
+Streptomyces harbinensis	1176198	S	376	381	757	0.00005	0.00003	nan	nan	73	1.0
+Streptomyces cyaneochromogenes	2496836	S	374	395	769	0.00005	0.00003	nan	nan	71	1.0
+Streptomyces tanashiensis	67367	S	370	397	767	0.00005	0.00003	nan	nan	73	1.0
+Streptomyces dangxiongensis	1442032	S	363	380	743	0.00005	0.00003	nan	nan	73	1.0
+Streptomyces argyrophyllae	2726118	S	350	380	730	0.00005	0.00003	nan	nan	73	1.0
+Streptomyces spongiicola	1690221	S	349	362	711	0.00005	0.00003	nan	nan	73	1.0
+Streptomyces liangshanensis	2717324	S	348	353	701	0.00005	0.00003	nan	nan	73	1.0
+Streptomyces parvus	66428	S	341	417	758	0.00005	0.00003	nan	nan	72	1.0
+Streptomyces sudanensis	436397	S	323	339	662	0.00005	0.00002	nan	nan	74	1.0
+Streptomyces finlayi	67296	S	313	320	633	0.00005	0.00002	nan	nan	70	1.0
+Streptomyces yangpuensis	1648182	S	311	341	652	0.00005	0.00002	nan	nan	73	1.0
+Streptomyces vinaceus	1960	S	306	322	628	0.00004	0.00002	nan	nan	73	1.0
+Streptomyces ferrugineus	1413221	S	306	323	629	0.00004	0.00002	nan	nan	72	1.0
+Streptomyces tendae	1932	S	291	310	601	0.00004	0.00002	nan	nan	72	1.0
+Streptomyces nigra	1827580	S	283	298	581	0.00004	0.00002	nan	nan	72	1.0
+Streptomyces fradiae	1906	S	274	535	809	0.00006	0.00004	nan	nan	73	1.0
+Streptomyces durocortorensis	2811104	S	269	290	559	0.00004	0.00002	nan	nan	72	1.0
+Streptomyces prasinus	67345	S	256	269	525	0.00004	0.00002	nan	nan	73	1.0
+Streptomyces caniscabiei	2746961	S	254	341	595	0.00004	0.00002	nan	nan	72	1.0
+Streptomyces aquilus	2548456	S	253	265	518	0.00004	0.00002	nan	nan	71	1.0
+Streptomyces rutgersensis	53451	S	252	271	523	0.00004	0.00002	nan	nan	73	1.0
+Streptomyces leeuwenhoekii	1437453	S	246	292	538	0.00004	0.00002	nan	nan	73	1.0
+Streptomyces griseofuscus	146922	S	245	339	584	0.00004	0.00002	nan	nan	72	1.0
+Streptomyces autolyticus	75293	S	240	770	1010	0.00007	0.00005	nan	nan	72	1.0
+Streptomyces pactum	68249	S	239	259	498	0.00004	0.00002	nan	nan	73	1.0
+Streptomyces nojiriensis	66374	S	230	265	495	0.00004	0.00002	nan	nan	72	1.0
+Streptomyces zhihengii	1818004	S	222	223	445	0.00003	0.00002	nan	nan	67	1.0
+Streptomyces janthinus	67308	S	219	303	522	0.00004	0.00002	nan	nan	72	1.0
+Streptomyces coelicolor	1902	S	103	418	521	0.00004	0.00003	nan	nan	72	1.0
+Streptomyces glaucescens	1907	S	212	224	436	0.00003	0.00002	nan	nan	73	1.0
+Streptomyces tuirus	68278	S	205	233	438	0.00003	0.00002	nan	nan	72	1.0
+Streptomyces actuosus	1885	S	204	216	420	0.00003	0.00002	nan	nan	73	1.0
+Streptomyces hawaiiensis	67305	S	190	212	402	0.00003	0.00002	nan	nan	72	1.0
+Streptomyces albireticuli	1940	S	185	602	787	0.00006	0.00004	nan	nan	73	1.0
+Streptomyces deccanensis	424188	S	184	209	393	0.00003	0.00001	nan	nan	72	1.0
+Streptomyces filamentosus	67294	S	176	272	448	0.00003	0.00002	nan	nan	72	1.0
+Streptomyces cyaneogriseus	68192	S	149	180	329	0.00002	0.00001	nan	nan	73	1.0
+Streptomyces californicus	67351	S	139	351	490	0.00003	0.00002	nan	nan	73	1.0
+Streptomyces xiamenensis	408015	S	121	159	280	0.00002	0.00001	nan	nan	73	1.0
+Streptomyces cinereoruber	67260	S	106	440	546	0.00004	0.00003	nan	nan	73	1.0
+Streptomyces lusitanus	68232	S	106	122	228	0.00002	0.00001	nan	nan	73	1.0
+Streptomyces violaceoruber	1935	S	102	319	421	0.00003	0.00002	nan	nan	73	1.0
+Kitasatospora sp. HUAS 3-15	3004092	S	240	258	498	0.00004	0.00002	nan	nan	74	1.0
+Kitasatospora aureofaciens	1894	S	222	234	456	0.00003	0.00002	nan	nan	73	1.0
+Streptacidiphilus sp. PB12-B1b	2705012	S	101	103	204	0.00001	0.00001	nan	nan	73	1.0
+Streptantibioticus cattleyicolor	29303	S	104	104	208	0.00001	0.00001	nan	nan	74	1.0
+Actinomyces oris	544580	S	186121	216666	402787	0.02866	0.01542	nan	nan	70	1.0
+Actinomyces sp. oral taxon 171	706438	S	80573	84680	165253	0.01176	0.00603	nan	nan	69	1.0
+Actinomyces sp. oral taxon 169	712116	S	40321	47986	88307	0.00628	0.00342	nan	nan	70	1.0
+Actinomyces sp. HMT 175	2789425	S	17977	27735	45712	0.00325	0.00197	nan	nan	70	1.0
+Actinomyces sp. oral taxon 414	712122	S	2164	2181	4345	0.00031	0.00016	nan	nan	74	1.0
+Actinomyces sp. Chiba101	1851395	S	781	793	1574	0.00011	0.00006	nan	nan	72	1.0
+Actinomyces sp. Z16	2079536	S	506	517	1023	0.00007	0.00004	nan	nan	70	1.0
+Actinomyces sp. 432	2057798	S	443	447	890	0.00006	0.00003	nan	nan	69	1.0
+Actinomyces sp. HMT897	2789424	S	252	688	940	0.00007	0.00005	nan	nan	71	1.0
+Actinomyces sp. oral taxon 897	2081702	S	151	417	568	0.00004	0.00003	nan	nan	71	1.0
+Actinomyces naeslundii	1655	S	55733	56910	112643	0.00802	0.00405	nan	nan	69	1.0
+Actinomyces viscosus	1656	S	32272	32946	65218	0.00464	0.00234	nan	nan	71	1.0
+Actinomyces massiliensis	461393	S	2047	2065	4112	0.00029	0.00015	nan	nan	69	1.0
+Actinomyces capricornis	2755559	S	1474	1479	2953	0.00021	0.00011	nan	nan	72	1.0
+Actinomyces slackii	52774	S	1396	1400	2796	0.00020	0.00010	nan	nan	71	1.0
+Actinomyces israelii	1659	S	1233	1237	2470	0.00018	0.00009	nan	nan	73	1.0
+Actinomyces radicidentis	111015	S	750	755	1505	0.00011	0.00005	nan	nan	73	1.0
+Actinomyces urogenitalis	103621	S	705	710	1415	0.00010	0.00005	nan	nan	69	1.0
+Actinomyces howellii	52771	S	697	698	1395	0.00010	0.00005	nan	nan	72	1.0
+Actinomyces respiraculi	2744574	S	631	636	1267	0.00009	0.00005	nan	nan	71	1.0
+Actinomyces faecalis	2722820	S	628	630	1258	0.00009	0.00004	nan	nan	70	1.0
+Actinomyces lilanjuaniae	2321394	S	539	544	1083	0.00008	0.00004	nan	nan	70	1.0
+Actinomyces procaprae	2560010	S	508	517	1025	0.00007	0.00004	nan	nan	70	1.0
+Actinomyces wuliandei	2057743	S	499	504	1003	0.00007	0.00004	nan	nan	71	1.0
+Actinomyces trachealis	2763540	S	445	448	893	0.00006	0.00003	nan	nan	67	1.0
+Actinomyces qiguomingii	2057800	S	439	440	879	0.00006	0.00003	nan	nan	67	1.0
+Actinomyces marmotae	2737173	S	420	427	847	0.00006	0.00003	nan	nan	72	1.0
+Actinomyces weissii	675090	S	406	407	813	0.00006	0.00003	nan	nan	72	1.0
+Actinomyces gaoshouyii	1960083	S	398	404	802	0.00006	0.00003	nan	nan	71	1.0
+Actinomyces pacaensis	1852377	S	134	134	268	0.00002	0.00001	nan	nan	57	1.0
+Schaalia odontolytica	1660	S	396	396	792	0.00006	0.00003	nan	nan	67	1.0
+Pauljensenia hongkongensis	178339	S	100	100	200	0.00001	0.00001	nan	nan	72	1.0
+Microbacterium sp. AB	2981139	S	325475	326074	651549	0.04637	0.02321	nan	nan	72	1.0
+Rothia aeria	172042	S	253	321	574	0.00004	0.00002	nan	nan	59	1.0
+Kutzneria buriramensis	1045776	S	344	436	780	0.00006	0.00003	nan	nan	71	1.0
+Catellatospora sp. IY07-71	2728827	S	161	197	358	0.00003	0.00001	nan	nan	73	1.0
+Polymorphospora rubra	338584	S	107	160	267	0.00002	0.00001	nan	nan	73	1.0
+Arachnia propionica	1750	S	192	192	384	0.00003	0.00001	nan	nan	67	1.0
+Cutibacterium avidum	33010	S	146	146	292	0.00002	0.00001	nan	nan	64	1.0
+Spiroplasma poulsonii	2138	S	656452	658060	1314512	0.09355	0.04683	nan	nan	27	1.0
+Arcobacter roscoffensis	2961520	S	2669145	2682476	5351621	0.38086	0.19090	nan	nan	29	1.0
+Capnocytophaga gingivalis	1017	S	699411	700325	1399736	0.09961	0.04984	nan	nan	42	1.0
+Capnocytophaga sputigena	1019	S	6262	6286	12548	0.00089	0.00045	nan	nan	40	1.0
+Capnocytophaga endodontalis	2708117	S	2490	2510	5000	0.00036	0.00018	nan	nan	41	1.0
+Capnocytophaga sp. oral taxon 878	1316596	S	1713	1740	3453	0.00025	0.00012	nan	nan	39	1.0
+Capnocytophaga sp. FDAARGOS_737	2545799	S	458	469	927	0.00007	0.00003	nan	nan	42	1.0
+Capnocytophaga ochracea	1018	S	1131	1175	2306	0.00016	0.00008	nan	nan	42	1.0
+Capnocytophaga leadbetteri	327575	S	542	546	1088	0.00008	0.00004	nan	nan	41	nan
+Apibacter sp. B2966	2656761	S	384011	508943	892954	0.06355	0.03622	nan	nan	31	1.0
+Apibacter sp. ESL0404	2704651	S	324	387	711	0.00005	0.00003	nan	nan	31	1.0
+Apibacter sp. B3706	2656760	S	317	379	696	0.00005	0.00003	nan	nan	32	1.0
+Apibacter sp. ESL0432	2704652	S	234	311	545	0.00004	0.00002	nan	nan	31	1.0
+Prevotella jejuni	1177574	S	122	145	267	0.00002	0.00001	nan	nan	43	1.0
+Homo sapiens	9606	S	165	165	330	0.00002	0.00001	nan	nan	38	1.0
