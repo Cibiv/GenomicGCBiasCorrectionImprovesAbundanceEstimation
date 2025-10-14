@@ -1,0 +1,433 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+# Setup
+
+```{r}
+library(data.table)
+library(ggplot2)
+library(ggpubr)
+library(ggrepel)
+library(amap)
+library(vegan)
+
+theme_set(theme_pubr(base_size = 8))
+```
+
+# Load data
+
+Load lists of studies and samples
+
+```{r}
+if (!file.exists("studies.rd")) local({
+  # Load supplementary tables of Gupta et al. listing samples plus meta-data
+  GUPTA_S3 <- data.table(read.table("gupta2020_s3.csv", sep=",",
+                                    header=TRUE, check.names=FALSE, quote='"'))
+  setkey(GUPTA_S3, `Sample Accession`)
+  
+  GUPTA_S6 <- data.table(read.table("gupta2020_s6.csv", sep=",",
+                                    header=TRUE, check.names=FALSE, quote='"'))
+  setkey(GUPTA_S6, `Sample Accession`)
+  
+  # Combine Gupta tables S3 and S6, rename fields
+  GUPTA <- rbind(
+    GUPTA_S3[, list(sample_accession=`Sample Accession`,
+                    healthy=`Subject Health Status`=="Healthy",
+                    condition=as.factor(`Phenotypea`),
+                    study=paste0(`Author (Year)`))],
+    GUPTA_S6[, list(sample_accession=`Sample Accession`,
+                    healthy=`Subject Health Status`=="Healthy",
+                    condition=as.factor(`Phenotype`),
+                    study=paste0(`Author (Year)`))]
+  )
+  setkey(GUPTA, `sample_accession`)
+
+  # Load supplementary table of Murovec et al. containing a curated selection
+  # of samples which good quality.
+  MUROVEC_S2 <- data.table(read.table("murovec2024_s2.csv", sep=",",
+                                      header=TRUE, check.names=FALSE, quote='"'))
+  setkey(MUROVEC_S2, `sample_accession`)
+  
+  # Load sample and meta-data tables for Yachida et. al (PRJDB4176)
+  PRJDB4176.ATTRS <- data.table(read.table("PRJDB4176.attributes.tab",
+                                           sep="\t", comment.char="#", header=TRUE,
+                                           colClasses=c(`Subject_ID`="character")))
+  PRJDB4176.INFO <- data.table(read.table("PRJDB4176.sample_disease_status.csv",
+                                           sep=",", header=TRUE,
+                                          colClasses=c(`Subject_ID`="character")))
+  PRJDB4176.RUNS <- data.table(read.csv("PRJDB4176.csv", header=FALSE))
+  PRJDB4176.STATE <- c(
+    `Healthy`="Healthy",
+    `HS`="HS",
+    `MP`="MP",
+    `Stage_0`="Colorectal cancer",
+    `Stage_I_II`="Colorectal cancer",
+    `Stage_III_IV`="Colorectal cancer"
+  )
+  PRJDB4176 <- PRJDB4176.ATTRS[PRJDB4176.INFO, list(
+    sample_accession,
+    healthy=PRJDB4176.STATE[Group] == "Healthy",
+    condition=PRJDB4176.STATE[Group],
+    study="Yachida (2019)",
+    run_accession=PRJDB4176.RUNS[PRJDB4176.ATTRS[PRJDB4176.INFO, on="Subject_ID"],
+                                 V1, on=c(`V30`="sample_accession")],
+    study_accession="PRJDB4176"
+  ), on="Subject_ID"]
+
+  # Save raw sample lists and meta-data
+  save(file="studies.rd", GUPTA, GUPTA_S3, GUPTA_S6, MUROVEC_S2, PRJDB4176)
+})
+
+# Load raw sample lists and meta-data
+load(file="studies.rd")
+
+# Create sample table. We use the accessions selected by Murovec at al. except
+# for PRJDB4176 (Yachida et al.) where we use all samples.
+SAMPLES <- rbind(
+  GUPTA[MUROVEC_S2][!PRJDB4176, on="sample_accession"],
+  PRJDB4176
+)
+
+# Rename PRJDB4176 to Yachida (2019). Gupta lists Thomas (2019) as the source,
+# but Yachida seems more correct.
+SAMPLES[study_accession=="PRJDB4176", study := "Yachida (2019)" ]
+
+# Create list of studies used
+STUDIES <- SAMPLES[, list(
+  study=study[1],
+  label=paste0(study[1], "\n(", study_accession,")"),
+  label_oneline=paste0(study[1], " (", study_accession,")")
+), by="study_accession"]
+setkey(STUDIES, study_accession)
+```
+
+Load abundances and efficiencies
+
+```{r}
+if (!file.exists("results.rd")) local({
+  # Read estimated abundances
+  ABUNDANCES <- SAMPLES[, {
+    file <- paste0("guacamole_results/", study_accession, "-", run_accession, ".guaca.bz2")
+    if (file.exists(file)) data.table(read.table(bzfile(file, "r"), sep="\t",
+                                                 header=TRUE, colClasses=c("GC.content"="numeric")))
+    else NULL
+  }, by=c("study_accession", "sample_accession", "run_accession", "study", "healthy", "condition")]
+  setkey(ABUNDANCES, run_accession, taxonomy_id)
+  
+  # Read estimated GC-dependent sequencing efficiencies
+  EFFICIENCIES <- SAMPLES[, {
+    file <- paste0("guacamole_results/", study_accession, "-", run_accession, ".geffs.bz2")
+    if (file.exists(file)) {
+      effs <- read.table(bzfile(file, "r"), sep="\t", header=FALSE, col.names=c("eff"))
+      stopifnot(length(effs$eff) == 101)
+      data.table(GC=seq(from=0, to=100, by=1), efficiency=effs$eff)[is.finite(efficiency) &
+                                                                    (efficiency > 0.0)]
+    } else NULL
+  }, by=c("study_accession", "sample_accession", "run_accession", "study", "healthy", "condition")]
+  setkey(EFFICIENCIES, run_accession, GC)
+
+  # Save GuaCAMOLE results
+  save(file="results.rd", EFFICIENCIES, ABUNDANCES)
+})  
+
+# Load GuaCAMOLE results
+load(file="results.rd")
+    
+# Find valid runs (i.e. with non-NAN efficiency estimates)
+RUNS.VALID <- EFFICIENCIES[, list(valid=all(is.finite(efficiency)))
+                           , keyby="run_accession"][valid==TRUE]
+
+# Merge Mycolicibacter on the genus level
+ABUNDANCES[startsWith(name, "Mycolicibacter"),
+           c("name", "taxonomy_id") := list("Mycolicibacter", 1073531) ]
+
+# Compute GC content on species level
+SPECIES.GC <- ABUNDANCES[, list(GC=round(mean(GC.content, na.rm=TRUE))), by=c("taxonomy_id", "name")]
+ABUNDANCES[, GC.species := SPECIES.GC[ABUNDANCES, GC, on="taxonomy_id"]]
+
+# Mark runs where Guacamole failed as invalid
+ABUNDANCES[, valid := FALSE]
+ABUNDANCES[RUNS.VALID, valid := TRUE]
+
+# 
+write.csv(file=bzfile("abundaces.csv.bz2", "w+"), ABUNDANCES, row.names=FALSE)
+```
+
+# Sequencing efficiencies
+
+Principal component analysis
+
+```{r}
+# Average efficiency per GC bin in each study
+EFFICIENCIES.AVG <- EFFICIENCIES[RUNS.VALID][
+  , list(efficiency=mean(efficiency))
+  , by=c("study", "study_accession", "GC")]
+
+# Compute efficiency matrix EFF.M with studies in rows and GC bins in columns
+EFF.WIDE <- dcast(EFFICIENCIES.AVG, study_accession ~ GC, value.var="efficiency")
+EFF.M <- as.matrix(EFF.WIDE[, -1])
+rownames(EFF.M) <- EFF.WIDE$study_accession
+EFF.M <- EFF.M[, apply(EFF.M, MARGIN=2, FUN=function(x) all(!is.na(x)))]
+
+# Compute PCA of per-study efficiency curves
+EFF.PR <- prcomp(EFF.M, scale=FALSE, center=FALSE)
+EFF.PC <- cbind(as.data.table(EFF.PR$x),
+                study_accession=EFF.WIDE$study_accession)
+
+# Reconstruct per-study efficiency curves from the first 3 PCs
+K <- 3
+EFF.REC <- EFF.PR$x[, 1:K] %*% t(EFF.PR$rotation[, 1:K])
+rownames(EFF.REC) <- EFF.WIDE$study_accession
+colnames(EFF.REC) <- colnames(EFF.M)
+
+# Build EFFICIENCIES.K which contains the efficiency curves reconstructed from
+# the first 3 PCs in the same format as the original EFFICIENCIES.AVG table.
+EFFICIENCIES.K <- melt(as.data.table(EFF.REC, keep.rownames=TRUE),
+                       id.vars="rn", variable.name="GC", value.name="efficiency")
+colnames(EFFICIENCIES.K)[1] <- "study_accession"
+EFFICIENCIES.K$GC <- as.numeric(as.character(EFFICIENCIES.K$GC))
+EFFICIENCIES.K[, study := STUDIES[EFFICIENCIES.K, study, on="study_accession"]]
+```
+
+First three principal components
+
+```{r}
+EFF.COMPS <- melt(as.data.table(EFF.PR$rotation, keep.rownames=TRUE),
+                  id.vars="rn", variable.name="pc", value.name="efficiency")
+colnames(EFF.COMPS)[1] <- "GC"
+EFF.COMPS$GC <- as.numeric(as.character(EFF.COMPS$GC))
+p <- ggplot(EFF.COMPS[pc %in% c("PC1", "PC2", "PC3")],
+            aes(x=GC, y=efficiency * ifelse(pc == "PC1", -1, -1), color=pc)) +
+  geom_line() +
+  labs(color="", y="efficiency", x="GC content [%]") +
+  theme(legend.position=c(0.35, 0.4), legend.direction="vertical",
+        axis.text.y = element_blank(),
+        legend.text = element_text(size=6),
+        legend.key.spacing.y =  unit(-10, "pt"),
+        legend.spacing.y = unit(-50, "pt"),
+        legend.margin = margin(0,0,0,0),
+        legend.background = element_blank())
+ggsave("crc_pc123.pdf", plot=p, width = 0.75, height=0.5, scale=3)
+p
+```
+
+Show efficiencies recovered from the first three components
+
+```{r eval=FALSE, include=FALSE}
+ggplot(EFFICIENCIES.AVG,
+       aes(x=GC, y=efficiency)) +
+  geom_line() +
+  geom_line(data=EFFICIENCIES.K, color="blue") +
+  facet_wrap(vars(study))
+```
+
+Cluster based on PC1, PC2 and PC3 into 4 clusters
+
+```{r}
+# Build matrix containing the first three PCs of each study
+OBS <- as.matrix(EFF.PC[, list(PC1=(PC1 - mean(PC2)) / sd(PC1),
+                               PC2=(PC2 - mean(PC2)) / sd(PC2),
+                               PC3=(PC3 - mean(PC3)) / sd(PC3))])
+rownames(OBS) <- EFF.PC$study_accession
+# Compute euclidean distances between PCs
+DISTS <- dist(OBS, method="euclidean")
+# Compute hierachical clustering
+HCLUST <- hclust(DISTS)
+# Split into 4 cluster
+CLUSTER <- cutree(HCLUST, 4)
+
+# Set cluster labels and reorder factors  
+STUDIES[list(names(CLUSTER)), cluster := CLUSTER, on="study_accession"]
+STUDIES <- STUDIES[!is.na(cluster)]
+STUDIES[order(cluster, label_oneline), plot_order := 1:nrow(STUDIES)]
+STUDIES[, cluster_label := as.character(as.roman(cluster)), by="cluster" ]
+study_accessions_ordered <-  STUDIES[order(plot_order), study_accession]
+STUDIES[, study_accession := factor(study_accession, study_accessions_ordered)]
+
+EFFICIENCIES[, study_accession := factor(study_accession, study_accessions_ordered) ]
+```
+
+Save studies after cluster assignment
+
+```{r}
+write.csv(file="studies.csv", STUDIES, row.names=FALSE)
+```
+
+
+Show clusters
+
+```{r}
+pdf(file="crc_cluster_dendro.pdf", width = 8, height=4)
+heatmap(t(EFF.PR$x[, 2:3]), labCol=STUDIES[list(rownames(EFF.M)),
+                                           paste0(label_oneline, " ", cluster_label),
+                                           on="study_accession"],
+        Colv = as.dendrogram(HCLUST), Rowv=NA, cexRow=1, cexCol = 0.5,
+        scale="row", margins=c(15, 0))
+dev.off()
+```
+
+Plot GC-dependent efficiencies
+
+```{r}
+p <- ggplot(EFFICIENCIES[], aes(x=GC, y=efficiency)) +
+  stat_summary(geom='ribbon', fun.data = mean_sd, fill="lightgrey", ) +
+  stat_smooth(color="black", method="gam", formula=y ~ s(x, bs = "cs"), se=FALSE) +
+  scale_x_continuous(oob = scales::oob_keep, limits=c(20, 80), breaks=c(25,50,75)) +
+  scale_y_continuous(oob = scales::oob_keep, limits=c(0, 1.0), breaks=c(0,0.5,1)) +
+  geom_text(aes(label=label), x=50, y=0, vjust=0, lineheight=0.8, size=4,
+            data=STUDIES) +
+  geom_text(aes(label=cluster_label), data=STUDIES, x=23, y=0, hjust=1, vjust=0) +
+  facet_wrap(vars(study_accession), ncol=5) +
+  labs(x="GC content [%]", y="sequencing efficiency") +
+  theme(strip.text = element_blank(),
+        strip.background = element_blank(),
+        strip.text.x = element_blank())
+ggsave("crc_study_eff.pdf", plot=p, width = 3.5, height=2, scale=3)
+p
+```
+
+Average efficiency per cluster
+
+```{r}
+p.clust.eff <- ggplot(EFFICIENCIES[STUDIES, , on="study_accession"], aes(x=GC, y=efficiency)) +
+  stat_summary(geom='ribbon', fun.data = mean_sd, fill="lightgrey", ) +
+  stat_smooth(color="black", method="gam", formula=y ~ s(x, bs = "cs"), se=FALSE) +
+  facet_wrap(vars(cluster_label), ncol=4) +
+  geom_text(aes(label=cluster_label), data=STUDIES, x=25, y=1.0, hjust=0, vjust=0.5) +
+  geom_text(aes(label=paste0(n, " studies")), data=STUDIES[, list(n=.N), by="cluster_label"],
+            x=75, y=0, hjust=1, vjust=0) +
+  scale_y_continuous(oob = scales::oob_keep, limits=c(0, 1.0), breaks=c(0,0.5,1)) +
+  scale_x_continuous(oob = scales::oob_keep, limits=c(23,75), breaks=c(25,50,75)) +
+  labs(x="GC content [%]", y="efficiency") +
+  theme(strip.text = element_blank(),
+        strip.background = element_blank(),
+        strip.text.x = element_blank())
+ggsave(filename="crc_cluster_eff.pdf", p.clust.eff, width = 2, height=0.5, scale=3)
+p.clust.eff
+```
+
+# Abundance vs. GC content
+
+Aggregate species information on cluster level
+
+```{r}
+# Compute species statistics on cluster level
+SPECIES <- ABUNDANCES[RUNS.VALID][STUDIES, on="study_accession"][, list(
+  name=name[1],
+  GC=GC.species,
+  studies=length(unique(study_accession)),
+  studies.healthy=length(unique(study_accession[healthy])),
+  studies.nonhealthy=length(unique(study_accession[!healthy])),
+  samples=.N,
+  samples.healthy=sum(healthy),
+  samples.nonhealthy=sum(!healthy)
+), by=c("taxonomy_id")]
+
+
+SPECIES.CLUSTER <- ABUNDANCES[RUNS.VALID][STUDIES, on="study_accession"][, list(
+  name=name[1],
+  GC=GC.species,
+  studies=length(unique(study_accession)),
+  studies.healthy=length(unique(study_accession[healthy])),
+  studies.nonhealthy=length(unique(study_accession[!healthy])),
+  samples=.N,
+  samples.healthy=sum(healthy),
+  samples.nonhealthy=sum(!healthy)
+), by=c("taxonomy_id", "cluster_label")]
+
+```
+
+
+```{r}
+p.clust.spec <- ggplot(SPECIES.CLUSTER, aes(x=GC)) +
+  geom_histogram(aes(y=after_stat(density), color="cluster"), fill="lightgrey") +
+  geom_histogram(aes(y=after_stat(density), color="avg."), data=SPECIES, fill=NA) + 
+  #geom_text(aes(label=cluster_label, x=25, y=0.08), hjust=0, vjust=1) +
+  scale_x_continuous(oob = scales::oob_keep, limits=c(23,75), breaks=c(25,50,75)) +
+  scale_color_manual(breaks=c("cluster", "avg."), values=c("black", "darkgreen")) +
+  labs(x="GC content [%]", y="species", color="") +
+  facet_wrap(vars(cluster_label), ncol=4) +
+  theme(strip.text = element_blank(),
+        strip.background = element_blank(),
+        strip.text.x = element_blank(),
+        legend.position = "inside",
+        legend.position.inside = c(0.95, 1.0),
+        legend.direction = "vertical",
+        legend.background = element_blank(),
+        legend.box.background = element_blank(),
+        legend.key.height = unit(3, "pt"),
+        legend.key.width = unit(10, "pt")
+)
+ggsave(filename="crc_cluster_species.pdf", p.clust.spec, width = 2, height=0.5, scale=3)
+```
+
+
+```{r}
+p.clust.abd <- ggplot(ABUNDANCES[RUNS.VALID][STUDIES, on="study_accession"], aes(x=GC.species)) +
+  geom_smooth(aes(y=GuaCAMOLE_est_eff, color="GuaCAMOLE"), method="gam", formula=y ~ s(x, bs = "cs"), se=FALSE) +
+  geom_smooth(aes(y=Bracken_estimate, color="Bracken"), method="gam", formula=y ~ s(x, bs = "cs"), se=FALSE) +
+  #geom_text(aes(label=cluster_label, x=25, y=1e-4), hjust=0, vjust=1) +
+  geom_text(aes(label=paste0(n, " sp."), x=60, y=1e-4), data=SPECIES.CLUSTER[, list(n=length(unique(taxonomy_id))), by="cluster_label"],
+            hjust=1, vjust=1) +
+  scale_y_log10(breaks=c(1e-4, 1e-3, 1e-2), labels=expression(10**-4, 10**-3, 10**-2)) +
+  scale_x_continuous(oob = scales::oob_keep, limits=c(23,75), breaks=c(25,50,75)) +
+  scale_color_manual(breaks=c("Bracken", "GuaCAMOLE"), values=c("#ff7f0e", "#1f77b4")) +
+  labs(x="GC content [%]", y="abundance", color="") +
+  facet_wrap(vars(cluster_label), ncol=4) +
+  theme(strip.text = element_blank(),
+        strip.background = element_blank(),
+        strip.text.x = element_blank(),
+        legend.position = "inside",
+        legend.position.inside = c(0.7, 0.9),
+        legend.background = element_blank(),
+        legend.box.background = element_blank(),
+        #legend.text = element_text(size=8),
+        legend.direction="horizontal")
+ggsave(filename="crc_cluster_abd.pdf", p.clust.abd, width = 2, height=0.5, scale=3)
+#p
+```
+
+
+```{r}
+TAXON_IDS <- c(851, 2955861, 2956048, 1073531)
+ABUNDANCES.TAXA <- ABUNDANCES[RUNS.VALID][STUDIES, on="study_accession"][taxonomy_id %in% TAXON_IDS]
+ABUNDANCES.TAXA[, x_adjust := 0]
+ABUNDANCES.TAXA[taxonomy_id == 851, name := "F. nucleatum"]
+ABUNDANCES.TAXA[taxonomy_id == 2955861, name := "E. intestinihominis"]
+ABUNDANCES.TAXA[taxonomy_id == 2956048, name := "K. intestinalis"]
+ABUNDANCES.TAXA[taxonomy_id == 2956048, x_adjust := 1]
+ABUNDANCES.TAXA[taxonomy_id == 1073531, name := "Mycolicibacter"]
+ABUNDANCES.TAXA$name <- factor(ABUNDANCES.TAXA$name, c("E. intestinihominis", "K. intestinalis", "F. nucleatum", "Mycolicibacter"))
+p.clust.quot <- ggplot(ABUNDANCES[RUNS.VALID][STUDIES, on="study_accession"], aes(x=GC.species, y=GuaCAMOLE_est_eff/Bracken_estimate)) +
+  stat_summary(geom='ribbon', fun.data = mean_sd, fill="lightgrey") +
+  geom_smooth(method="gam", formula=y ~ s(x, bs = "cs"), se=FALSE, color="black") +
+  geom_point(data=ABUNDANCES.TAXA, aes(x=GC.species + x_adjust, color=name), size=1) +
+  #geom_text(aes(label=cluster_label, x=25, y=0.5), hjust=0, vjust=0) +
+  scale_y_log10(oob = scales::oob_keep, limits=c(0.5, 20)) +
+  scale_x_continuous(oob = scales::oob_keep, limits=c(23,75), breaks=c(25,50,75)) +
+  labs(x="GC content [%]", y="correction", color="") +
+  facet_wrap(vars(cluster_label), ncol=4) +
+  theme(strip.text = element_blank(),
+        strip.background = element_blank(),
+        strip.text.x = element_blank(),
+        legend.position = "inside",
+        legend.position.inside = c(0.5, 1.0),
+        legend.background = element_blank(),
+        legend.box.background = element_blank(),
+        #legend.text = element_text(size=8),
+        legend.direction="horizontal")
+ggsave(filename="crc_cluster_quot.pdf", p.clust.quot, width = 2, height=0.5, scale=3)
+```
+
+```{r}
+p.clust <- ggarrange(p.clust.eff,
+                     p.clust.spec,
+                     p.clust.abd,
+                     p.clust.quot,
+               nrow=4, align="hv",
+               labels=c("A", "B", "C", "D"), vjust=c(0.98, 1, 0.5, 0.8))
+ggsave(filename="crc_cluster.pdf", p.clust, width = 18/2.54, height=12/2.54, scale=1)
+```
+
