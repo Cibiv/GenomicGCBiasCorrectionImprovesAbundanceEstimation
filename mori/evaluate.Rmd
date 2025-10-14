@@ -1,0 +1,145 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(data.table)
+library(ggplot2)
+library(ggpubr)
+
+theme_set(theme_pubr())
+```
+
+```{r}
+SPECIES <- data.table(
+  taxonomy_id = c(165179, # Segatella copri, same as Prevotella copri?
+              818,    # Bacteroides thetaiotaomicron
+              823 ,   # Parabacterioids distasonis
+              74426,  # Collinsella aerofaciens
+              216816, # Bifidobacterium longum
+              100886, # Catenibacterium mitsuokai
+              1309,   # Streptococcus mutans
+              907,    # Megasphaera elsdenii
+              39777,  # Veillonella atypica
+              437897, # Megamonas funiformis
+              292800, # Flavonifractor plautii
+              853,    # Faecalibacterium prausnitzii
+              105841, # Anaerostipes caccae
+              33038,  # Ruminococcus gnavus
+              208479, # Enterocloster bolteae
+              33035,  # Blautia producta
+              166486, # Roseburia intestinalis
+              4259990 # Agathobacter rectalis
+))
+
+GENERA <- data.table(
+  taxonomy_id = c(2974251, # Segatella
+              816,     # Bacteroides
+              375288,  # Parabacterioids
+              102106,  # Collinsella
+              1678,    # Bifidobacterium
+              135858,  # Catenibacterium
+              1766253, # Streptococcus
+              906,     # Megasphaera
+              29465,   # Veillonella
+              158846,  # Megamonas
+              1301,    # Flavonifractor
+              216851,  # Faecalibacterium
+              207244,  # Anaerostipes
+              1263,    # Ruminococcus
+              2719313, # Enterocloster
+              572511,  # Blautia
+              841,     # Roseburia
+              946234   # Agathobacter
+))
+
+SAMPLE_TABLE <- data.table(read.table("samples.csv", header=TRUE, sep=","))
+SAMPLES <- SAMPLE_TABLE[, list(
+  sample = Run,
+  mix = sapply(strsplit(Library.Name, split="_"), function(s) s[[1]]),
+  extraction = sapply(strsplit(Library.Name, split="_"), function(s) if (s[[1]] == "Cmix") s[[2]] else NA),
+  sequencer = sapply(strsplit(Library.Name, split="_"), function(s) if (s[[1]] == "Cmix") s[[3]] else s[[2]])
+)]
+setkey(SAMPLES, sample)
+
+EFFICIENCIES <- SAMPLES[, {
+  tab <- data.table(read.table(paste0("guacamole_results/", sample, "-G.geffs"),
+                               header=FALSE, col.names=c("eff")))
+  tab[, gc := seq(from=0, to=100, by=1)]
+}, keyby="sample"]
+
+ABUNDANCES <- SAMPLES[, {
+  tab <- data.table(read.table(paste0("guacamole_results/", sample, "-G.guaca"),
+                               header=TRUE, sep="\t", colClasses=c("GC.content"="numeric")))
+  tab
+}, keyby="sample"]
+
+ABUNDANCES.LONG <- melt(ABUNDANCES, id.vars=c("sample", "name", "taxonomy_id"),
+                        measure.vars=c("Bracken_estimate", "GuaCAMOLE_estimate", "GuaCAMOLE_est_eff"),
+                        variable.name=c("estimator"), value.name=c("abundance"))
+setkey(ABUNDANCES.LONG, sample, taxonomy_id)
+GC.CONTENT <- ABUNDANCES[, list(gc=mean(GC.content)), keyby="taxonomy_id"]
+```
+
+```{r}
+p1 <- ggplot(EFFICIENCIES[SAMPLES][eff > 0], aes(x=gc, y=eff, group=sample,
+                                           color=ifelse(!is.na(extraction), extraction, "DNA mix"),
+                                           linetype=sapply(sequencer,
+                                                           function(s) switch(s,`Hi`="HiSeq 2500 rapid",
+                                                                              `Nova`="NovaSeq 6000 SP")))) +
+  geom_line() +
+  guides(color=guide_legend(nrow=3,byrow=TRUE)) +
+  theme(legend.position = c(0.5, 0.28), legend.direction = "horizontal", legend.title.position = "top",
+        legend.text = element_text(size=6), legend.title = element_text(size=8),
+        legend.key.spacing.x = unit(5, "pt"), legend.spacing.y = unit(-8, "pt"),
+        legend.key.size = unit(10, "pt"),
+        axis.line = element_blank(),
+        panel.border =element_rect(linewidth=1, fill=NA),
+        legend.background = element_blank(),
+        legend.box.background = element_rect(linewidth=0.5, color="lightgrey", fill=NA),
+        legend.box.margin = margin(0,0,0,0),
+        legend.margin = margin(5,5,5,5)) +
+  labs(x="GC content (%)", y="Sequencing Efficiency", color="DNA extraction", linetype="Sequencer") +
+  lims(y=c(0,1))
+ggsave(filename="mori23_eff.pdf", width=1, height=1, scale=3)
+p1
+```
+
+
+```{r}
+LABELS <- ABUNDANCES[, list(name=name[1]), by="taxonomy_id"][GC.CONTENT, on="taxonomy_id"][GENERA, on="taxonomy_id"][
+  !(name %in% c("Ruminococcus", "Roseburia", "Enterocloster"))]
+LABELS <- LABELS[, list(name=paste(name, collapse="\n")), by="gc"]
+LABELS[, nudge:=0]
+LABELS[name=="Agathobacter", nudge:=-0.2]
+LABELS[name=="Parabacteroides", nudge:=+0.2]
+LABELS[name=="Bacteroides\nAnaerostipes", nudge:=-0]
+p2 <- ggplot(ABUNDANCES[GC.CONTENT, on="taxonomy_id"][SAMPLES, on="sample"][GENERA, on="taxonomy_id"][!(name %in% c("Ruminococcus", "Roseburia", "Enterocloster"))],
+  aes(x=gc, y=100*(GuaCAMOLE_estimate - Bracken_estimate) / (GuaCAMOLE_estimate + Bracken_estimate),
+      color=sapply(sequencer, function(s) switch(s,`Hi`="HiSeq 2500 rapid", `Nova`="NovaSeq 6000 SP")))) +
+  geom_point() +
+  geom_text(aes(x=gc + nudge, y=-12, label=name), inherit.aes=FALSE, angle=45, hjust=1, size=2.7, lineheight=0.5,
+            data=LABELS) +
+  geom_linerange(aes(x=gc), data=LABELS, inherit.aes=FALSE, ymin=-11, ymax=-11.8) +
+  geom_smooth(fill = NA) +
+  labs(x="GC content (%)", y="Rel. Diff. GuaCAMOLE vs. Bracken (%)          ", color="") +
+  lims(x=c(30, 65)) +
+  theme(axis.line = element_blank(),
+        panel.border =element_rect(linewidth=1, fill=NA),
+        legend.background = element_rect(linewidth=0.5, color="lightgrey", fill=NA),
+        legend.margin = margin(3,3,3,3, unit="pt"),
+        legend.title = element_blank(),
+        legend.spacing.y = unit(0, "pt"),
+        legend.position=c(0.85, 0.87))
+ggsave(filename="mori23_abddiff.pdf", width=2, height=1, scale=3)
+p2
+```
+
+
+```{r}
+p <- ggarrange(p1, p2, ncol=2, labels=c("A", "B"), widths=c(1, 2), font.label=list(size=16, face="plain"), hjust=c(0, -2))
+ggsave("mori23.pdf", plot=p, width=3, height=1, scale=3)
+p
+```
+

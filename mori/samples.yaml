@@ -1,0 +1,31 @@
+read_length: 250
+targets:
+  samples:
+    - accession: DRR466840
+      dataset: mori2023
+    - accession: DRR466841
+      dataset: mori2023
+    - accession: DRR466849
+      dataset: mori2023
+    - accession: DRR466850
+      dataset: mori2023
+    - accession: DRR466858
+      dataset: mori2023
+    - accession: DRR466859
+      dataset: mori2023
+    - accession: DRR466867
+      dataset: mori2023
+    - accession: DRR466868
+      dataset: mori2023
+    - accession: DRR466876
+      dataset: mori2023
+    - accession: DRR466877
+      dataset: mori2023
+    - accession: DRR466885
+      dataset: mori2023
+    - accession: DRR466886
+      dataset: mori2023
+    - accession: DRR466894
+      dataset: mori2023
+    - accession: DRR466895
+      dataset: mori2023
