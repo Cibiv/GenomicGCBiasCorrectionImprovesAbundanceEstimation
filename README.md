@@ -6,6 +6,10 @@ The [GuaCAMOLE](https://github.com/Cibiv/GuaCAMOLE) algorithm is available at [h
 
 # Contents
 
+## Fig. 2A, simulation study (``simulation/fig2a/``)
+
+The script ``fig2a.py`` creates the plots of the true and GuaCAMOLE estimated sequencing efficiencies as well as the estimation errors of the abundances of different simulated biases shown in figure 2A.
+
 ## Fig. 2B, simulation study (``simulation/``)
 
 The script ``simulate_communities.py`` simulates communities with different number of taxa and genomic GC composition as described in the manuscript. Each simulated community is represented by a file in ``parameters/`` which contains the RefSeq identifier of the genome assembly used to represent each taxon and the taxon's abundance in the community. All assemblies are downloaded into ``assemblies_merged`` in a format suitable for read simulation. The script ``simulate_reads.py`` uses a [InSilicoSeq-GCBias](https://github.com/Cibiv/InSilicoSeq-GCBias) to simulate sequencing reads for each libraries and places the simulated libraries in `libraries/`. InSilicoSeq-GCBias is a version of [InSilicoSeq](https://github.com/HadrienG/InSilicoSeq) modified to simulate GC bias, and must be installed from https://github.com/Cibiv/InSilicoSeq-GCBias before running ``simulate_reads.py``. `evaluate.py` reads the output for GuaCAMOLE and MetaPhlAn4 from `results/` and reproduces the simulation results shown in Fig. 2. Due to size constraints, this repository contains the community descriptions and GuaCAMOLE/MetaPhlAn4 results, but not the genome assemblies (these are available from RefSeq) and simulated reads.
