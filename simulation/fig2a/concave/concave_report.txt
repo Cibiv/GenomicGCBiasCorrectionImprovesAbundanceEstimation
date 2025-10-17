@@ -1,0 +1,102 @@
+100.00	17541092	0	R	1	root
+100.00	17541092	0	R1	131567	  cellular organisms
+100.00	17541092	0	D	2	    Bacteria
+ 73.77	12939437	0	D1	1783272	      Terrabacteria group
+ 53.97	9466742	0	P	1239	        Bacillota
+ 25.83	4531721	1294	C	186801	          Clostridia
+ 15.95	2798623	0	O	3085636	            Lachnospirales
+ 15.95	2798623	723	F	186803	              Lachnospiraceae
+  5.45	956333	0	G	2719313	                Enterocloster
+  5.45	956333	956333	S	1531	                  Enterocloster clostridioformis
+  5.42	950523	0	G	572511	                Blautia
+  5.42	950523	0	S	33035	                  Blautia producta
+  5.42	950523	950523	S1	1121114	                    Blautia producta ATCC 27340 = DSM 2950
+  5.08	891044	0	G	1766253	                Agathobacter
+  5.08	891044	0	S	39491	                  Agathobacter rectalis
+  5.08	891044	891044	S1	515619	                    Agathobacter rectalis ATCC 33656
+  9.87	1731804	0	O	186802	            Eubacteriales
+  9.87	1731804	955	F	216572	              Oscillospiraceae
+  5.17	906634	0	G	216851	                Faecalibacterium
+  5.17	906634	906634	S	411483	                  Faecalibacterium duncaniae
+  4.70	824215	0	G	946234	                Flavonifractor
+  4.70	824215	824215	S	292800	                  Flavonifractor plautii
+ 19.16	3360286	0	C	91061	          Bacilli
+ 10.09	1769645	0	O	186826	            Lactobacillales
+  5.50	965336	0	F	33958	              Lactobacillaceae
+  5.50	965336	0	G	1578	                Lactobacillus
+  5.50	965336	0	S	1584	                  Lactobacillus delbrueckii
+  5.50	965336	965336	S1	83684	                    Lactobacillus delbrueckii subsp. delbrueckii
+  4.59	804309	0	F	1300	              Streptococcaceae
+  4.59	804309	0	G	1301	                Streptococcus
+  4.59	804309	804309	S	1309	                  Streptococcus mutans
+  9.07	1590641	0	O	1385	            Bacillales
+  5.28	925892	0	F	186817	              Bacillaceae
+  5.28	925892	0	G	1386	                Bacillus
+  5.28	925892	0	G1	653685	                  Bacillus subtilis group
+  5.28	925892	0	S	1423	                    Bacillus subtilis
+  5.28	925892	925892	S1	135461	                      Bacillus subtilis subsp. subtilis
+  3.79	664749	0	F	90964	              Staphylococcaceae
+  3.79	664749	0	G	1279	                Staphylococcus
+  3.79	664749	664749	S	1282	                  Staphylococcus epidermidis
+  8.98	1574735	0	C	909932	          Negativicutes
+  5.38	943196	0	O	1843489	            Veillonellales
+  5.38	943196	0	F	31977	              Veillonellaceae
+  5.38	943196	0	G	906	                Megasphaera
+  5.38	943196	0	S	907	                  Megasphaera elsdenii
+  5.38	943196	943196	S1	1064535	                    Megasphaera elsdenii DSM 20460
+  3.60	631539	0	O	909929	            Selenomonadales
+  3.60	631539	0	F	1843491	              Selenomonadaceae
+  3.60	631539	0	G	158846	                Megamonas
+  3.60	631539	631539	S	437897	                  Megamonas funiformis
+ 19.80	3472695	0	P	201174	        Actinomycetota
+ 14.92	2616955	0	C	1760	          Actinomycetes
+  9.87	1731787	0	O	85004	            Bifidobacteriales
+  9.87	1731787	0	F	31953	              Bifidobacteriaceae
+  9.87	1731787	0	G	1678	                Bifidobacterium
+  9.87	1731787	28080	S	216816	                  Bifidobacterium longum
+  4.86	852426	0	S1	1679	                    Bifidobacterium longum subsp. longum
+  4.86	852426	852426	S2	565042	                      Bifidobacterium longum subsp. longum JCM 1217
+  4.85	851281	0	S1	1682	                    Bifidobacterium longum subsp. infantis
+  4.85	851281	851281	S2	391904	                      Bifidobacterium longum subsp. infantis ATCC 15697 = JCM 1222 = DSM 20088
+  5.05	885168	0	O	85009	            Propionibacteriales
+  5.05	885168	0	F	31957	              Propionibacteriaceae
+  5.05	885168	0	G	1912216	                Cutibacterium
+  5.05	885168	0	S	1747	                  Cutibacterium acnes
+  5.05	885168	885168	S1	1734925	                    Cutibacterium acnes subsp. acnes
+  4.88	855740	0	C	84998	          Coriobacteriia
+  4.88	855740	0	O	84999	            Coriobacteriales
+  4.88	855740	0	F	84107	              Coriobacteriaceae
+  4.88	855740	0	G	102106	                Collinsella
+  4.88	855740	0	S	74426	                  Collinsella aerofaciens
+  4.88	855740	855740	S1	411903	                    Collinsella aerofaciens ATCC 25986
+ 10.72	1879738	0	D1	1783270	      FCB group
+ 10.72	1879738	0	D2	68336	        Bacteroidota/Chlorobiota group
+ 10.72	1879738	0	P	976	          Bacteroidota
+ 10.72	1879738	0	C	200643	            Bacteroidia
+ 10.72	1879738	279	O	171549	              Bacteroidales
+  5.37	941961	0	F	815	                Bacteroidaceae
+  5.37	941961	0	G	816	                  Bacteroides
+  5.37	941961	941961	S	820	                    Bacteroides uniformis
+  5.34	937498	0	F	2005525	                Tannerellaceae
+  5.34	937498	0	G	375288	                  Parabacteroides
+  5.34	937498	0	S	823	                    Parabacteroides distasonis
+  5.34	937498	937498	S1	435591	                      Parabacteroides distasonis ATCC 8503
+ 10.22	1791903	0	P	1224	      Pseudomonadota
+ 10.22	1791903	0	C	1236	        Gammaproteobacteria
+  5.50	965318	0	O	91347	          Enterobacterales
+  5.50	965318	0	F	543	            Enterobacteriaceae
+  5.50	965318	0	G	561	              Escherichia
+  5.50	965318	965318	S	562	                Escherichia coli
+  4.71	826585	0	O	72274	          Pseudomonadales
+  4.71	826585	0	F	135621	            Pseudomonadaceae
+  4.71	826585	0	G	286	              Pseudomonas
+  4.71	826585	0	G1	136845	                Pseudomonas putida group
+  4.71	826585	0	S	303	                  Pseudomonas putida
+  4.71	826585	826585	S1	1211579	                    Pseudomonas putida NBRC 14164
+  5.30	930014	0	D1	1783257	      PVC group
+  5.30	930014	0	P	74201	        Verrucomicrobiota
+  5.30	930014	0	C	203494	          Verrucomicrobiia
+  5.30	930014	0	O	48461	            Verrucomicrobiales
+  5.30	930014	0	F	1647988	              Akkermansiaceae
+  5.30	930014	0	G	239934	                Akkermansia
+  5.30	930014	930014	S	239935	                  Akkermansia muciniphila
